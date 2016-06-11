@@ -1,13 +1,14 @@
-name: Stark
+name: Wysoka Manor
 type: theme
-description: 'An intentionally plain theme with no styling to demonstrate default Drupal’s HTML and CSS. Learn how to build a custom theme from Stark in the <a href="https://www.drupal.org/theme-guide">Theming Guide</a>.'
+description: 'Custom theme developed especially for Wysoka Manor.'
 package: Core
-# version: VERSION
-# core: 8.x
-base theme: false
-
-# Information added by Drupal.org packaging script on 2016-05-04
-version: '8.1.1'
-core: '8.x'
-project: 'drupal'
-datestamp: 1462362201
+core: 8.x
+base theme: classy
+libraries:
+  - wm/global-styling
+regions:
+  supernav: Super Navigation
+  top: Content above main content
+  content: Page content
+  bottom: Content below main content
+  footer: Footer

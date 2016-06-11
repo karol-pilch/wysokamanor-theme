@@ -1,5 +1,16 @@
 global-styling:
-  version: VERSION
+  version: 1.x
   css:
-    base:
-      css/layout.css: {}
+    theme:
+      css/global.css: {}
+
+# Example:
+# cuddly-slider:
+#   version: 1.x
+#   css:
+#     theme:
+#       css/cuddly-slider.css: {}
+#   js:
+#     js/cuddly-slider.js: {}
+#   dependencies:
+#     - core/jquery
