@@ -1,0 +1,305 @@
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+Keys in variables: Array
+(
+    [0] => element
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => entity_type
+    [13] => field_name
+    [14] => field_type
+    [15] => label_display
+    [16] => label_hidden
+    [17] => label
+    [18] => multiple
+    [19] => items
+    [20] => #cache
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/16/field_front_page_section_text/und/full
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/18/field_front_page_section_text/und/full
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/20/field_front_page_section_text/und/full
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/22/field_front_page_section_text/und/full
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/24/field_front_page_section_text/und/full
+)
+
+No label: Array
+(
+    [data-quickedit-field-id] => field_collection_item/26/field_front_page_section_text/und/full
+)

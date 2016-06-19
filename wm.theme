@@ -1,0 +1,43 @@
+<?php
+/**
+ * Prints the debug message to a file. Replacement for missing drupal_debug.
+ *
+ * @param mixed $var
+ *   The variable to print
+ * @param string $label
+ *   (Optional) The label to print before the variable.
+ */
+function wm_debug($var, $label = NULL) {
+	$path = drupal_get_path('theme', 'wm') . '/debug.txt';
+	try {
+		$output = ($label ? "\n$label: ": "\nNo label: ");
+		$output .= print_r($var, TRUE);		// TUTAJ <===============
+		file_put_contents($path, $output, FILE_APPEND);
+	}
+	catch (Exception $e) {
+		trigger_exception("Failed to write debug information.", E_USER_WARNING);
+	}
+}
+
+/**
+ * Implements hook_preprocess_field().
+ *
+ * Adds nice class name to selected fields.
+ */
+function wm_preprocess_field(&$variables, $hook) {
+	$process_fields = array(
+		'front_page_section_text',
+		'front_page_section_link',
+		'story_author_name',
+		'story_author_about',
+		'story_body',
+		'story_footer_image',
+		'illustrated_section',
+	);
+
+	foreach ($process_fields as $name) {
+		if ($variables['field_name'] == "field_$name") {
+			$variables['attributes']['class'][] = 'wm-' . str_replace('_', '-', $name);
+		}
+	}
+}

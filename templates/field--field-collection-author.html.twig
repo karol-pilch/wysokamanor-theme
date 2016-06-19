@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for field 'field_front_page_section'.
+ * Theme override for field 'field_collection_author'.
  *
  * Available variables:
  * - attributes: HTML attributes for the containing element.
@@ -21,9 +21,8 @@
  * @see template_preprocess_field()
  */
 #}
-
 {% for item in items %}
-	<div{{ item.attributes.addClass('wm-front-page-section') }}>
+	<div{{ item.attributes.addClass('wm-image-author')}}>
 		{{ item.content }}
 	</div>
 {% endfor %}

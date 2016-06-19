@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for field 'field_front_page_section'.
+ * Theme override for field 'field_collection_image'.
  *
  * Available variables:
  * - attributes: HTML attributes for the containing element.
@@ -22,8 +22,7 @@
  */
 #}
 
+{# Just output the image, nothing else. #}
 {% for item in items %}
-	<div{{ item.attributes.addClass('wm-front-page-section') }}>
-		{{ item.content }}
-	</div>
+	{{ item.content }}
 {% endfor %}
