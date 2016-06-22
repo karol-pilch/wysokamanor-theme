@@ -1,8 +1,29 @@
+# Availabe to all pages everywhere
 global-styling:
   version: 1.x
   css:
     theme:
       css/global.css: {}
+
+fonts:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic: { type: external }
+      css/fonts.css: {}
+
+# Styling for the main menu
+menu-main:
+  version: 1.x
+  css:
+    theme:
+      css/menu-main.css: {}
+
+# General pretty menu styling
+navigation-links:
+  version: 1.x
+  css:
+    theme:
+      css/navigation-links.css: {}
 
 # Example:
 # cuddly-slider:

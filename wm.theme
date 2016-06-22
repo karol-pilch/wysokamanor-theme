@@ -41,3 +41,8 @@ function wm_preprocess_field(&$variables, $hook) {
 		}
 	}
 }
+
+function wm_preprocess_page(&$variables) {
+	// To add a Library from wm.libraries.yml to a page, do this:
+	// $variables['#attached']['library'][] = wm/the-library
+}
