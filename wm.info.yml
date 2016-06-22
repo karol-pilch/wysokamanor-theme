@@ -6,6 +6,7 @@ core: 8.x
 base theme: classy
 libraries:
   - wm/global-styling
+  - wm/fonts
 regions:
   supernav: Super Navigation
   top: Content above main content
