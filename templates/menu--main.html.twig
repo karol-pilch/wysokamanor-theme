@@ -48,15 +48,10 @@
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
-				{{ link("<div class=\"wm-link-icon\"></div>
-				<div class=\"wm-link-body\">#{item.title}</div>"|raw, item.url) }}
-
-				<!-- Here: Need to add active class to the link... -->
-
-				<!-- <a href="{{item.url}}">
+				<a href="{{item.url}}"{% if item.in_active_trail %} class="active"{% endif %}>
 					<div class="wm-link-icon"></div>
 					<div class="wm-link-body">{{ item.title }}</div>
-				</a> -->
+				</a>
 				{#{ link(item.title, item.url) }#}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

@@ -1,5 +1,5 @@
 
-Page variable keys: Array
+Page: Array
 (
     [0] => page
     [1] => theme_hook_original
@@ -19,9 +19,10 @@ Page variable keys: Array
     [15] => is_front
     [16] => node
     [17] => #cache
+    [18] => site_name
 )
 
-Page variable keys: Array
+Page: Array
 (
     [0] => page
     [1] => theme_hook_original
@@ -39,5 +40,170 @@ Page variable keys: Array
     [13] => front_page
     [14] => language
     [15] => is_front
-    [16] => #cache
+    [16] => node
+    [17] => #cache
+    [18] => site_name
 )
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Page: Array
+(
+    [0] => page
+    [1] => theme_hook_original
+    [2] => attributes
+    [3] => title_attributes
+    [4] => content_attributes
+    [5] => title_prefix
+    [6] => title_suffix
+    [7] => db_is_active
+    [8] => is_admin
+    [9] => logged_in
+    [10] => user
+    [11] => directory
+    [12] => base_path
+    [13] => front_page
+    [14] => language
+    [15] => is_front
+    [16] => node
+    [17] => #cache
+    [18] => site_name
+)
+
+Node type: front_page

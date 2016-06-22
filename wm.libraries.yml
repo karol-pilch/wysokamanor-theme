@@ -25,6 +25,13 @@ navigation-links:
     theme:
       css/navigation-links.css: {}
 
+# Front page library
+front-page:
+  version: 1.x
+  css:
+    theme:
+      css/front.css: {}
+
 # Example:
 # cuddly-slider:
 #   version: 1.x

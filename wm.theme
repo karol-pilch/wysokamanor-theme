@@ -10,8 +10,8 @@
 function wm_debug($var, $label = NULL) {
 	$path = drupal_get_path('theme', 'wm') . '/debug.txt';
 	try {
-		$output = ($label ? "\n$label: ": "\nNo label: ");
-		$output .= print_r($var, TRUE);		// TUTAJ <===============
+		$output = ($label ? "\n$label: ": "\n");
+		$output .= print_r($var, TRUE);
 		file_put_contents($path, $output, FILE_APPEND);
 	}
 	catch (Exception $e) {
@@ -43,6 +43,12 @@ function wm_preprocess_field(&$variables, $hook) {
 }
 
 function wm_preprocess_page(&$variables) {
-	// To add a Library from wm.libraries.yml to a page, do this:
-	// $variables['#attached']['library'][] = wm/the-library
+	$variables['site_name'] = \Drupal::config('system.site')->get('name');
+	if (isset($variables['node'])) {
+		$node_type = $variables['node']->getType();
+
+		if ($node_type == 'front_page') {
+			$variables['#attached']['library'][] = 'wm/front-page';
+		}
+	}
 }
