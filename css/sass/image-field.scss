@@ -1,0 +1,42 @@
+.wm-image-field {
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+
+	.wm-image-author {
+		position: absolute;
+		right: 0.5px;
+		bottom: 1px;
+		line-height: 1.5em;
+
+		padding: 0 0.3em 0 0.6em;
+		background: rgba(0, 0, 0, 0.6);
+
+		box-shadow: -0.1em -0.1em 0.5em rgba(0, 0, 0, 0.4);
+		border-top-left-radius: 1em;
+
+		a, span {
+			color: #DDD;
+			text-decoration: none;
+
+			&:before {
+				content: '\00a9 '
+			}
+
+			&:hover, &:active {
+				color: #FFF;
+			}
+		}
+	}
+
+	.wm-image-label {
+		display: none;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+}

@@ -32,6 +32,13 @@ front-page:
     theme:
       css/front.css: {}
 
+# Rich images
+image-field:
+  version: 1.x
+  css:
+    theme:
+      css/image-field.css: {}
+
 # Example:
 # cuddly-slider:
 #   version: 1.x

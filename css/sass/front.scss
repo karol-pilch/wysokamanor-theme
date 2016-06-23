@@ -1,12 +1,32 @@
+// The big fat title of the site.
 .wm-site-name {
 	text-align: center;
 
 	h1 {
 		display: inline-block;
-		font-size: 3em;
-		padding: 0.3em 2em 0;
+		padding: 0.3em 2em 0.1em;
+		margin: 1.2em 0;
 
 		border: solid rgba(100, 100, 100, 0.4);
 		border-width: 1px 0;
+
+		font-size: 4em;
+	}
+}
+
+// Sections of the front page.
+.wm-front-page-section{
+	padding: 0 5%;
+
+	.wm-front-page-section-text {
+		font-size: 2em;
+		margin: 1em 10%;
+
+		p {
+			margin: 0;
+			padding: 0 1em 1em;
+			border: double black;
+			border-width: 0 0 0.4em;
+		}
 	}
 }

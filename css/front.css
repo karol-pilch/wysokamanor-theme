@@ -1,12 +1,30 @@
-/* line 1, sass/front.scss */
+/* line 2, sass/front.scss */
 .wm-site-name {
   text-align: center;
 }
-/* line 4, sass/front.scss */
+/* line 5, sass/front.scss */
 .wm-site-name h1 {
   display: inline-block;
-  font-size: 3em;
-  padding: 0.3em 2em 0;
+  padding: 0.3em 2em 0.1em;
+  margin: 1.2em 0;
   border: solid rgba(100, 100, 100, 0.4);
   border-width: 1px 0;
+  font-size: 4em;
+}
+
+/* line 18, sass/front.scss */
+.wm-front-page-section {
+  padding: 0 5%;
+}
+/* line 21, sass/front.scss */
+.wm-front-page-section .wm-front-page-section-text {
+  font-size: 2em;
+  margin: 1em 10%;
+}
+/* line 25, sass/front.scss */
+.wm-front-page-section .wm-front-page-section-text p {
+  margin: 0;
+  padding: 0 1em 1em;
+  border: double black;
+  border-width: 0 0 0.4em;
 }

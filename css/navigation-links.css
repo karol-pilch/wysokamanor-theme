@@ -19,12 +19,14 @@
   padding: 0;
   border: 0 solid #CCC;
   border-left-width: 1px;
+  flex: 0 1 auto;
+  min-width: 0;
 }
-/* line 21, sass/navigation-links.scss */
+/* line 23, sass/navigation-links.scss */
 .wm-navigation-links li:last-child {
   border-right-width: 1px;
 }
-/* line 26, sass/navigation-links.scss */
+/* line 28, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-body {
   margin-left: 2.5rem;
   padding: 0 0.4em;
@@ -34,7 +36,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 38, sass/navigation-links.scss */
+/* line 40, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-icon {
   position: absolute;
   width: 2.5rem;
@@ -44,7 +46,7 @@
   border-radius: 50%;
   background-color: green;
 }
-/* line 49, sass/navigation-links.scss */
+/* line 51, sass/navigation-links.scss */
 .wm-navigation-links a, .wm-navigation-links a:hover {
   text-decoration: none;
   color: black;

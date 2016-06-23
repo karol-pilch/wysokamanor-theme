@@ -23,6 +23,7 @@
 #}
 
 {# Just output the image, nothing else. #}
+{{ attach_library('wm/image-field') }}
 {% for item in items %}
 	{{ item.content }}
 {% endfor %}
