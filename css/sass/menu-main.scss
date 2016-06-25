@@ -1,0 +1,21 @@
+.menu--main .wm-navigation-links {
+	display: flex;
+	justify-content: center;
+
+	li {
+		border: 0 solid #CCC;
+		border-left-width: 1px;
+		flex: 0 1 auto;
+		min-width: 0;
+
+		&:last-child {
+			border-right-width: 1px;
+		}
+
+		.wm-link-body {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}

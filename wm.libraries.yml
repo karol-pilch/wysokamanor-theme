@@ -18,6 +18,13 @@ menu-main:
     theme:
       css/menu-main.css: {}
 
+# ... and for the bottom menu
+menu-bottom:
+  version: 1.x
+  css:
+    theme:
+      css/menu-bottom.css: {}
+
 # General pretty menu styling
 navigation-links:
   version: 1.x

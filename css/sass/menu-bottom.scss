@@ -1,0 +1,25 @@
+.menu--front-page-links {
+	width: 38em;
+	margin: 3em auto;
+
+	.wm-navigation-links {
+
+		.active {
+			display: none;
+		}
+
+		li {
+			margin: 1em 0;
+		}
+
+		a {
+			transition: border-color 0.3s;
+			border: 0 solid transparent;
+			border-width: 0 5px;
+
+			&:hover {
+				border-color: rgba(0, 0, 0, 0.8);
+			}
+		}
+	}
+}

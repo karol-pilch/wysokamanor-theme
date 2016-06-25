@@ -1,0 +1,23 @@
+/* line 1, sass/menu-bottom.scss */
+.menu--front-page-links {
+  width: 38em;
+  margin: 3em auto;
+}
+/* line 7, sass/menu-bottom.scss */
+.menu--front-page-links .wm-navigation-links .active {
+  display: none;
+}
+/* line 11, sass/menu-bottom.scss */
+.menu--front-page-links .wm-navigation-links li {
+  margin: 1em 0;
+}
+/* line 15, sass/menu-bottom.scss */
+.menu--front-page-links .wm-navigation-links a {
+  transition: border-color 0.3s;
+  border: 0 solid transparent;
+  border-width: 0 5px;
+}
+/* line 20, sass/menu-bottom.scss */
+.menu--front-page-links .wm-navigation-links a:hover {
+  border-color: rgba(0, 0, 0, 0.8);
+}

@@ -20,6 +20,10 @@
 #}
 {% import _self as menus %}
 
+{# Add CSS to manage the menu. #}
+{{ attach_library('wm/menu-bottom') }}
+{{ attach_library('wm/navigation-links') }}
+
 {#
   We call a macro which calls itself to render the full tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
@@ -30,9 +34,9 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu') }}>
+      <ul{{ attributes.addClass('menu wm-navigation-links') }}>
     {% else %}
-      <ul class="menu">
+      <ul class="menu wm-navigation-links">
     {% endif %}
     {% for item in items %}
       {%
@@ -44,8 +48,11 @@
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
-				<div class="wm-link-icon"></div>
-				<div class="wm-link-body">{{ link(item.title, item.url) }}</div>
+				<a href="{{item.url}}"{% if item.in_active_trail %} class="active"{% endif %}>
+					<div class="wm-link-icon"></div>
+					<div class="wm-link-body">{{ item.title }}</div>
+				</a>
+				{#{ link(item.title, item.url) }#}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}

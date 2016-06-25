@@ -1,6 +1,4 @@
 .wm-navigation-links {
-	display: flex;
-	justify-content: center;
 
 	a {
 		position: relative;
@@ -15,14 +13,6 @@
 
 	li {
 		padding: 0;
-		border: 0 solid #CCC;
-		border-left-width: 1px;
-		flex: 0 1 auto;
-		min-width: 0;
-
-		&:last-child {
-			border-right-width: 1px;
-		}
 	}
 
 	.wm-link-body {
@@ -31,10 +21,6 @@
 
 		font-size: 1.5rem;
 		line-height: 2em;
-
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 
 	.wm-link-icon {

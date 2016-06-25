@@ -26,8 +26,6 @@ function wm_debug($var, $label = NULL) {
  */
 function wm_preprocess_field(&$variables, $hook) {
 	$process_fields = array(
-		'front_page_section_text',
-		'front_page_section_link',
 		'story_author_name',
 		'story_author_about',
 		'story_body',

@@ -1,3 +1,45 @@
 nav.supernav {
 	margin-top: 1em;
 }
+
+.wm-region.wm-bottom {
+	margin-top: 3em;
+
+	&:before {
+		display: block;
+		text-align: center;
+		font-size: 2em;
+		letter-spacing: 0.5em;
+		content: "* * *"
+	}
+}
+
+footer.wm-footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(200, 200, 200, 0.8);
+
+	a {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		transition: color 0.2s;
+
+		&:hover {
+			text-decoration: underline;
+			color: #FFF;
+		}
+	}
+
+	.block {
+		display: inline-block;
+		margin: 1em 3em;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 0.5em;
+
+		&:not(:last-child) {
+			border-right: 1px solid rgba(200, 200, 200, 0.8);
+		}
+	}
+}

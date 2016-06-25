@@ -15,18 +15,65 @@
 }
 
 // Sections of the front page.
-.wm-front-page-section{
-	padding: 0 5%;
 
-	.wm-front-page-section-text {
+.wm-front-page-section{
+	margin: 2em 0 0;
+	padding: 2rem 0;
+	text-align: center;;
+
+	&.wm-titled {
+		box-shadow: inset 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
+	}
+
+	h2.wm-section-title {
+		margin: 1rem auto 2rem;
+
+		text-align: center;
+		font-size: 3em;
+
+		white-space: nowrap;
+		overflow: hidden;
+
+		font-weight: normal;
+		font-style: italic;
+
+		&:before, &:after {
+			content: '~';
+			padding: 0 1em;
+		}
+	}
+
+	.wm-image-field {
+		box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(100, 100, 100, 0.3);
+	}
+
+	.wm-section-content {
 		font-size: 2em;
-		margin: 1em 10%;
+		max-width: 1200px;
+		padding: 0 1em;
+		margin: 1em auto 0;
+		text-align: right;
 
 		p {
+			text-align: justify;
+			text-indent: 1em;
 			margin: 0;
-			padding: 0 1em 1em;
-			border: double black;
-			border-width: 0 0 0.4em;
+		}
+
+		a {
+			display: inline-block;
+			margin-top:0.3em;
+			padding: 0.1em 0.5em;
+			border-bottom: 3px solid transparent;
+			text-decoration: none;
+			color: #000;
+
+			transition: background-color 0.5s, border-color 0.2s;
+
+			&:hover {
+				background-color: rgba(100, 100, 100, 0.2);
+				border-bottom-color: #000;
+			}
 		}
 	}
 }

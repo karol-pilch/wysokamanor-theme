@@ -21,4 +21,23 @@
  * @ingroup themeable
  */
 #}
-{{ content }}
+
+{% set class = 'wm-untitled' %}
+{% if content.field_fronta_page_section_header[0] %}
+	{% set class = 'wm-titled' %}
+{% endif %}
+
+<div{{ attributes.addClass(['wm-front-page-section', class]) }}>
+	{% if content.field_fronta_page_section_header[0] %}
+		<h2 class="wm-section-title"> {{ content.field_fronta_page_section_header[0] }} </h2>
+	{% endif %}
+
+	{{ content.field_front_page_image[0] }}
+
+	{% if content.field_front_page_section_text or content.field_front_page_section_link %}
+	<div class="wm-section-content">
+		{{ content.field_front_page_section_text[0] }}
+		{{ content.field_front_page_section_link[0] }}
+	</div>
+	{% endif %}
+</div>

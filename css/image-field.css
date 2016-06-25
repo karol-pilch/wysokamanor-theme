@@ -4,8 +4,9 @@
   display: inline-block;
   position: relative;
   line-height: 0;
+  max-width: 1200px;
 }
-/* line 6, sass/image-field.scss */
+/* line 7, sass/image-field.scss */
 .wm-image-field .wm-image-author {
   position: absolute;
   right: 0.5px;
@@ -16,24 +17,24 @@
   box-shadow: -0.1em -0.1em 0.5em rgba(0, 0, 0, 0.4);
   border-top-left-radius: 1em;
 }
-/* line 18, sass/image-field.scss */
+/* line 19, sass/image-field.scss */
 .wm-image-field .wm-image-author a, .wm-image-field .wm-image-author span {
   color: #DDD;
   text-decoration: none;
 }
-/* line 22, sass/image-field.scss */
+/* line 23, sass/image-field.scss */
 .wm-image-field .wm-image-author a:before, .wm-image-field .wm-image-author span:before {
   content: "©";
 }
-/* line 26, sass/image-field.scss */
+/* line 27, sass/image-field.scss */
 .wm-image-field .wm-image-author a:hover, .wm-image-field .wm-image-author a:active, .wm-image-field .wm-image-author span:hover, .wm-image-field .wm-image-author span:active {
   color: #FFF;
 }
-/* line 32, sass/image-field.scss */
+/* line 33, sass/image-field.scss */
 .wm-image-field .wm-image-label {
   display: none;
 }
-/* line 36, sass/image-field.scss */
+/* line 37, sass/image-field.scss */
 .wm-image-field img {
   max-width: 100%;
   height: auto;

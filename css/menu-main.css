@@ -1,0 +1,22 @@
+/* line 1, sass/menu-main.scss */
+.menu--main .wm-navigation-links {
+  display: flex;
+  justify-content: center;
+}
+/* line 5, sass/menu-main.scss */
+.menu--main .wm-navigation-links li {
+  border: 0 solid #CCC;
+  border-left-width: 1px;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+/* line 11, sass/menu-main.scss */
+.menu--main .wm-navigation-links li:last-child {
+  border-right-width: 1px;
+}
+/* line 15, sass/menu-main.scss */
+.menu--main .wm-navigation-links li .wm-link-body {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
