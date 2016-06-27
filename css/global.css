@@ -20,29 +20,30 @@ nav.supernav {
 footer.wm-footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(200, 200, 200, 0.8);
+  text-align: center;
 }
-/* line 21, sass/global.scss */
+/* line 22, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 26, sass/global.scss */
+/* line 27, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 32, sass/global.scss */
+/* line 33, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
-/* line 37, sass/global.scss */
+/* line 38, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 41, sass/global.scss */
+/* line 42, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }
