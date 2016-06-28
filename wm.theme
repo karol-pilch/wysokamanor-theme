@@ -21,7 +21,13 @@ function wm_debug($var, $label = NULL) {
 
 function wm_preprocess_menu(&$variables, $hook) {
 	if ($hook == 'menu__main' || $hook == 'menu__front_page_links') {
-		wm_debug($variables['items'], $hook);
+    if (count($variables['items'])) {
+      drupal_set_message('Type of item: ' . gettype($variables['items'][array_keys($variables['items'])[0]]));
+      foreach ($variables['items'] as $route => $value) {
+        wm_debug(array_keys($value), "Keys inside $route key");
+      }
+    }
+		// wm_debug($variables['items'], $hook);
 		// $variables['items'] is a list of things like menu_link_content:a4f8cd37-f24e-4ab2-8d95-0e38e75cc906.
 		// We need to get the node for the menu link, get the field containing menu image, and put the URL in the item.
 	}
