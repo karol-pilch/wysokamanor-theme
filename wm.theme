@@ -22,9 +22,31 @@ function wm_debug($var, $label = NULL) {
 function wm_preprocess_menu(&$variables, $hook) {
 	if ($hook == 'menu__main' || $hook == 'menu__front_page_links') {
     if (count($variables['items'])) {
-      drupal_set_message('Type of item: ' . gettype($variables['items'][array_keys($variables['items'])[0]]));
-      foreach ($variables['items'] as $route => $value) {
-        wm_debug(array_keys($value), "Keys inside $route key");
+      foreach ($variables['items'] as $mlid => &$link_variables) {
+				$url = \Drupal::service('plugin.manager.menu.link')
+					->createInstance($mlid)
+					->getUrlObject();
+				$internal_path = NULL;
+				if ($url->isRouted()) {
+					$internal_path = $url->getInternalPath();
+				}
+				else {
+					$internal_path = \Drupal::service('path.alias_manager')->getPathByAlias($url->toString());
+				}
+				$nid = preg_replace('/\/?node\//', '', $internal_path);
+				if (is_numeric($nid)) {
+					$node_storage = \Drupal::entityManager()->getStorage('node');
+					$node = \Drupal::entityManager()->getStorage('node')->load($nid);
+					if ($node->hasField('field_menu_image')) {
+						$image_field = $node->get('field_menu_image');
+						if ($image_field->count()) {
+							$fid = $image_field->get(0)->getValue()['target_id'];
+							$uri = \Drupal\file\Entity\File::load($fid)->getFileUri();
+							$source = \Drupal\Core\Url::fromUri("base:$uri", array('absolute' => TRUE))->toString();
+							// Here: The source somehow does not work. Need to make a proper URL here.
+						}
+					}
+				}
       }
     }
 		// wm_debug($variables['items'], $hook);
