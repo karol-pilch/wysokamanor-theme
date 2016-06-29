@@ -1,3 +1,5 @@
+@import 'palette';
+
 // The big fat title of the site.
 .wm-site-name {
 	text-align: center;
@@ -7,7 +9,7 @@
 		padding: 0.3em 2em 0.1em;
 		margin: 1.2em 0;
 
-		border: solid rgba(100, 100, 100, 0.4);
+		border: solid $dark;
 		border-width: 1px 0;
 
 		font-size: 4em;

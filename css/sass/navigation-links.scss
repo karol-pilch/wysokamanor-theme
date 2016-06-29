@@ -1,3 +1,5 @@
+@import 'palette';
+
 .wm-navigation-links {
 
 	a {
@@ -7,7 +9,7 @@
 
 		transition: background-color 0.3s;
 		&:hover {
-			background-color: rgba(100, 100, 100, 0.2);
+			background-color: $transparent;
 		}
 	}
 
@@ -31,7 +33,8 @@
 		left: 0.25rem;
 
 		border-radius: 50%;
-		background-color: green;
+		background-color: darken($transparent, 10%);
+		background-size: cover;
 	}
 
 	a, a:hover {

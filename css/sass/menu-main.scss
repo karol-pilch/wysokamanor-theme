@@ -1,21 +1,35 @@
-.menu--main .wm-navigation-links {
-	display: flex;
-	justify-content: center;
+@import 'palette';
 
-	li {
-		border: 0 solid #CCC;
-		border-left-width: 1px;
-		flex: 0 1 auto;
-		min-width: 0;
+.supernav {
+	text-align: center;
+}
 
-		&:last-child {
-			border-right-width: 1px;
-		}
+.menu--main {
+	display: inline-block;
 
-		.wm-link-body {
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
+	.wm-navigation-links {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+
+		background-color: lighten($light, 5%);
+		box-shadow: 0.3em 0.3em 0.5em $transparent;
+
+		li {
+			flex: 0 1 auto;
+			min-width: 0;
+
+			&:last-child {
+				border-right-width: 1px;
+			}
+
+			.wm-link-body {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
 		}
 	}
+
 }
+

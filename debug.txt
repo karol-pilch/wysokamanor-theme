@@ -1,0 +1,31 @@
+
+Parsed uri: Array
+(
+    [scheme] => public
+    [host] => 2016-06
+    [path] => /front.jpg
+)
+
+Parsed uri: Array
+(
+    [scheme] => public
+    [host] => 2016-06
+    [path] => /house_of_songs.jpg
+)
+
+Parsed uri: Array
+(
+    [scheme] => public
+    [host] => 2016-06
+    [path] => /front.jpg
+)
+
+Parsed uri: Array
+(
+    [scheme] => public
+    [host] => 2016-06
+    [path] => /front.jpg
+)
+
+0
+External: No

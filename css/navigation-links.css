@@ -1,26 +1,26 @@
-/* line 3, sass/navigation-links.scss */
+/* line 5, sass/navigation-links.scss */
 .wm-navigation-links a {
   position: relative;
   display: block;
   height: 3rem;
   transition: background-color 0.3s;
 }
-/* line 9, sass/navigation-links.scss */
+/* line 11, sass/navigation-links.scss */
 .wm-navigation-links a:hover {
-  background-color: rgba(100, 100, 100, 0.2);
+  background-color: rgba(70, 38, 0, 0.2);
 }
-/* line 14, sass/navigation-links.scss */
+/* line 16, sass/navigation-links.scss */
 .wm-navigation-links li {
   padding: 0;
 }
-/* line 18, sass/navigation-links.scss */
+/* line 20, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-body {
   margin-left: 2.5rem;
   padding: 0 0.4em;
   font-size: 1.5rem;
   line-height: 2em;
 }
-/* line 26, sass/navigation-links.scss */
+/* line 28, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-icon {
   position: absolute;
   width: 2.5rem;
@@ -28,9 +28,10 @@
   top: 0.25rem;
   left: 0.25rem;
   border-radius: 50%;
-  background-color: green;
+  background-color: rgba(19, 10, 0, 0.2);
+  background-size: cover;
 }
-/* line 37, sass/navigation-links.scss */
+/* line 40, sass/navigation-links.scss */
 .wm-navigation-links a, .wm-navigation-links a:hover {
   text-decoration: none;
   color: black;

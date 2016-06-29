@@ -1,5 +1,17 @@
-nav.supernav {
-	margin-top: 1em;
+@import 'palette';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: $lighter;
+	color: $darker;
+}
+
+header {
+	padding-top: 1em;
+	background-color: $light;
 }
 
 .wm-region.wm-bottom {

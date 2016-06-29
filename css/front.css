@@ -1,28 +1,28 @@
-/* line 2, sass/front.scss */
+/* line 4, sass/front.scss */
 .wm-site-name {
   text-align: center;
 }
-/* line 5, sass/front.scss */
+/* line 7, sass/front.scss */
 .wm-site-name h1 {
   display: inline-block;
   padding: 0.3em 2em 0.1em;
   margin: 1.2em 0;
-  border: solid rgba(100, 100, 100, 0.4);
+  border: solid #462600;
   border-width: 1px 0;
   font-size: 4em;
 }
 
-/* line 19, sass/front.scss */
+/* line 21, sass/front.scss */
 .wm-front-page-section {
   margin: 2em 0 0;
   padding: 2rem 0;
   text-align: center;
 }
-/* line 24, sass/front.scss */
+/* line 26, sass/front.scss */
 .wm-front-page-section.wm-titled {
   box-shadow: inset 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
 }
-/* line 28, sass/front.scss */
+/* line 30, sass/front.scss */
 .wm-front-page-section h2.wm-section-title {
   margin: 1rem auto 2rem;
   text-align: center;
@@ -32,16 +32,16 @@
   font-weight: normal;
   font-style: italic;
 }
-/* line 40, sass/front.scss */
+/* line 42, sass/front.scss */
 .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
   content: '~';
   padding: 0 1em;
 }
-/* line 46, sass/front.scss */
+/* line 48, sass/front.scss */
 .wm-front-page-section .wm-image-field {
   box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(100, 100, 100, 0.3);
 }
-/* line 50, sass/front.scss */
+/* line 52, sass/front.scss */
 .wm-front-page-section .wm-section-content {
   font-size: 2em;
   max-width: 1200px;
@@ -49,13 +49,13 @@
   margin: 1em auto 0;
   text-align: right;
 }
-/* line 57, sass/front.scss */
+/* line 59, sass/front.scss */
 .wm-front-page-section .wm-section-content p {
   text-align: justify;
   text-indent: 1em;
   margin: 0;
 }
-/* line 63, sass/front.scss */
+/* line 65, sass/front.scss */
 .wm-front-page-section .wm-section-content a {
   display: inline-block;
   margin-top: 0.3em;
@@ -65,7 +65,7 @@
   color: #000;
   transition: background-color 0.5s, border-color 0.2s;
 }
-/* line 73, sass/front.scss */
+/* line 75, sass/front.scss */
 .wm-front-page-section .wm-section-content a:hover {
   background-color: rgba(100, 100, 100, 0.2);
   border-bottom-color: #000;

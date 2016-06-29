@@ -1,20 +1,30 @@
-/* line 1, sass/menu-main.scss */
+/* line 3, sass/menu-main.scss */
+.supernav {
+  text-align: center;
+}
+
+/* line 7, sass/menu-main.scss */
+.menu--main {
+  display: inline-block;
+}
+/* line 10, sass/menu-main.scss */
 .menu--main .wm-navigation-links {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  background-color: #bb976f;
+  box-shadow: 0.3em 0.3em 0.5em rgba(70, 38, 0, 0.2);
 }
-/* line 5, sass/menu-main.scss */
+/* line 18, sass/menu-main.scss */
 .menu--main .wm-navigation-links li {
-  border: 0 solid #CCC;
-  border-left-width: 1px;
   flex: 0 1 auto;
   min-width: 0;
 }
-/* line 11, sass/menu-main.scss */
+/* line 22, sass/menu-main.scss */
 .menu--main .wm-navigation-links li:last-child {
   border-right-width: 1px;
 }
-/* line 15, sass/menu-main.scss */
+/* line 26, sass/menu-main.scss */
 .menu--main .wm-navigation-links li .wm-link-body {
   white-space: nowrap;
   overflow: hidden;

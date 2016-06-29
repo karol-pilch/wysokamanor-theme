@@ -47,9 +47,17 @@
           item.in_active_trail ? 'menu-item--active-trail',
         ]
       %}
+
+      {% if item.image_url %}
+      	{% set icon_style = 'background-image: url(' ~ item.image_url ~ ');' %}
+      {% else %}
+      	{% set icon_style = NULL %}
+      {% endif %}
+
+
       <li{{ item.attributes.addClass(classes) }}>
 				<a href="{{item.url}}"{% if item.in_active_trail %} class="active"{% endif %}>
-					<div class="wm-link-icon"></div>
+					<div class="wm-link-icon"{% if icon_style %} style="{{ icon_style }}"{% endif %}></div>
 					<div class="wm-link-body">{{ item.title }}</div>
 				</a>
 				{#{ link(item.title, item.url) }#}

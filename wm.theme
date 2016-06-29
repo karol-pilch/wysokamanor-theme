@@ -42,8 +42,7 @@ function wm_preprocess_menu(&$variables, $hook) {
 						if ($image_field->count()) {
 							$fid = $image_field->get(0)->getValue()['target_id'];
 							$uri = \Drupal\file\Entity\File::load($fid)->getFileUri();
-							$source = \Drupal\Core\Url::fromUri("base:$uri", array('absolute' => TRUE))->toString();
-							// Here: The source somehow does not work. Need to make a proper URL here.
+              $link_variables['image_url'] = file_create_url($uri);
 						}
 					}
 				}
