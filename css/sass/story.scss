@@ -1,0 +1,54 @@
+@import 'palette';
+
+body {
+	font-size: 1.3em;
+}
+
+.wm-page-title {
+	text-align: center;
+
+	h1 {
+		display: inline-block;
+		font-weight: normal;
+		padding: 1em;
+		border-bottom: 1px solid $dark;
+	}
+}
+
+.wm-story-author-field {
+	float: right;
+	width: 50%;
+	margin: 1em;
+	padding: 1em;
+
+	background-color: lighten($lighter, 10%);
+
+	box-shadow: 0.2em 0.2em 0.8em $transparent;
+}
+
+.wm-story-author-face {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	max-height: 8em;
+
+	img {
+		box-shadow: 0.2em 0.2em 1.5em -0.1em $transparent;
+		max-height: 100%;
+		width: auto;
+	}
+}
+
+.wm-story-author-name {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.wm-story-author-about {
+	font-size: 0.9em;
+
+	p {
+		text-indent: 1em;
+		text-align: justify;
+	}
+}

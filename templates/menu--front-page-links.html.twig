@@ -56,7 +56,7 @@
 
 
       <li{{ item.attributes.addClass(classes) }}>
-				<a href="{{item.url}}"{% if item.in_active_trail %} class="active"{% endif %}>
+				<a href="{{item.url}}"{% if item.in_active_trail or item.is_current %} class="active"{% endif %}>
 					<div class="wm-link-icon"{% if icon_style %} style="{{ icon_style }}"{% endif %}></div>
 					<div class="wm-link-body">{{ item.title }}</div>
 				</a>

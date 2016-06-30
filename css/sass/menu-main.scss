@@ -6,9 +6,11 @@
 
 .menu--main {
 	display: inline-block;
+	max-width: 100%;
 
 	.wm-navigation-links {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 auto;
 
@@ -16,11 +18,15 @@
 		box-shadow: 0.3em 0.3em 0.5em $transparent;
 
 		li {
-			flex: 0 1 auto;
+			// flex: 0 1 auto;
 			min-width: 0;
 
 			&:last-child {
 				border-right-width: 1px;
+			}
+
+			a.active .wm-link-icon {
+				box-shadow: 0 0 0.3em 0.1em transparentize($lighter, 0.2);
 			}
 
 			.wm-link-body {
@@ -32,4 +38,3 @@
 	}
 
 }
-

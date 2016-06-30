@@ -1,0 +1,56 @@
+/* line 3, sass/story.scss */
+body {
+  font-size: 1.3em;
+}
+
+/* line 7, sass/story.scss */
+.wm-page-title {
+  text-align: center;
+}
+/* line 10, sass/story.scss */
+.wm-page-title h1 {
+  display: inline-block;
+  font-weight: normal;
+  padding: 1em;
+  border-bottom: 1px solid #462600;
+}
+
+/* line 18, sass/story.scss */
+.wm-story-author-field {
+  float: right;
+  width: 50%;
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
+}
+
+/* line 29, sass/story.scss */
+.wm-story-author-face {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  max-height: 8em;
+}
+/* line 35, sass/story.scss */
+.wm-story-author-face img {
+  box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(70, 38, 0, 0.2);
+  max-height: 100%;
+  width: auto;
+}
+
+/* line 42, sass/story.scss */
+.wm-story-author-name {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* line 47, sass/story.scss */
+.wm-story-author-about {
+  font-size: 0.9em;
+}
+/* line 50, sass/story.scss */
+.wm-story-author-about p {
+  text-indent: 1em;
+  text-align: justify;
+}

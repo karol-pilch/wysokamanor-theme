@@ -19,13 +19,21 @@ function wm_debug($var, $label = NULL) {
 	}
 }
 
+/**
+ * Implements hook_preprocess_menu().
+ *
+ * Adds the image URL to menu link items so that we can use them in the template.
+ */
 function wm_preprocess_menu(&$variables, $hook) {
 	if ($hook == 'menu__main' || $hook == 'menu__front_page_links') {
     if (count($variables['items'])) {
       foreach ($variables['items'] as $mlid => &$link_variables) {
+
+				// Get the URL to the page from the link.
 				$url = \Drupal::service('plugin.manager.menu.link')
 					->createInstance($mlid)
 					->getUrlObject();
+
 				$internal_path = NULL;
 				if ($url->isRouted()) {
 					$internal_path = $url->getInternalPath();
@@ -33,13 +41,24 @@ function wm_preprocess_menu(&$variables, $hook) {
 				else {
 					$internal_path = \Drupal::service('path.alias_manager')->getPathByAlias($url->toString());
 				}
+
+				// Tell the link it's current because sometimes this doesn't work.
+				if ($url->toString() == \Drupal::service('path.current')->getPath()) {
+					$link_variables['is_current'] = TRUE;
+				}
+
+				// Get the node behind the link.
 				$nid = preg_replace('/\/?node\//', '', $internal_path);
 				if (is_numeric($nid)) {
 					$node_storage = \Drupal::entityManager()->getStorage('node');
 					$node = \Drupal::entityManager()->getStorage('node')->load($nid);
+
+					// Get the field_menu_image field from the node
 					if ($node->hasField('field_menu_image')) {
 						$image_field = $node->get('field_menu_image');
 						if ($image_field->count()) {
+
+							// Transform the file URI into a URL usable in CSS.
 							$fid = $image_field->get(0)->getValue()['target_id'];
 							$uri = \Drupal\file\Entity\File::load($fid)->getFileUri();
               $link_variables['image_url'] = file_create_url($uri);
@@ -48,9 +67,6 @@ function wm_preprocess_menu(&$variables, $hook) {
 				}
       }
     }
-		// wm_debug($variables['items'], $hook);
-		// $variables['items'] is a list of things like menu_link_content:a4f8cd37-f24e-4ab2-8d95-0e38e75cc906.
-		// We need to get the node for the menu link, get the field containing menu image, and put the URL in the item.
 	}
 }
 
@@ -75,13 +91,24 @@ function wm_preprocess_field(&$variables, $hook) {
 	}
 }
 
+/**
+ * Implements hook_preprocess_page().
+ *
+ * Used to attach correct libraries to content types.
+ */
 function wm_preprocess_page(&$variables) {
 	$variables['site_name'] = \Drupal::config('system.site')->get('name');
 	if (isset($variables['node'])) {
 		$node_type = $variables['node']->getType();
 
-		if ($node_type == 'front_page') {
-			$variables['#attached']['library'][] = 'wm/front-page';
+		switch ($node_type) {
+			case 'front_page':
+				$variables['#attached']['library'][] = 'wm/front-page';
+				break;
+
+			case 'story_page':
+				$variables['#attached']['library'][] = 'wm/story-page';
+				break;
 		}
 	}
 }

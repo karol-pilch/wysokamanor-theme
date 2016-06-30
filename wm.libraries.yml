@@ -46,6 +46,13 @@ image-field:
     theme:
       css/image-field.css: {}
 
+# Story pages
+story-page:
+  version: 1.x
+  css:
+    theme:
+      css/story.css: {}
+
 # Example:
 # cuddly-slider:
 #   version: 1.x
