@@ -1,0 +1,31 @@
+/* line 1, sass/illustrated-page.scss */
+h2.wm-section-title {
+  margin: 1rem auto 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 14, sass/illustrated-page.scss */
+h2.wm-section-title:before, h2.wm-section-title:after {
+  content: '~';
+  padding: 0 1em;
+}
+
+/* line 20, sass/illustrated-page.scss */
+.wm-section {
+  margin-top: 2em;
+  overflow: auto;
+  padding: 0 1.5em;
+  box-shadow: 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+/* line 31, sass/illustrated-page.scss */
+.wm-secton-content p:last-child {
+  margin-bottom: 0;
+}

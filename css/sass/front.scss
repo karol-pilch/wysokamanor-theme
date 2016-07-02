@@ -1,9 +1,29 @@
 @import 'palette';
 
-header {
-	padding-bottom: 0;
-}
+body.page-node-type-front-page {
+	font-size: initial;
 
+	header {
+		padding-bottom: 0;
+	}
+
+	article {
+		max-width: initial;
+		margin: 0 auto;
+
+		font-size: initial;
+		line-height: initial;
+
+		-webkit-hyphens: none;
+		hyphens: none;
+
+		text-align: initial;
+
+		p {
+			text-indent: 0;
+		}
+	}
+}
 // The big fat title of the site.
 .wm-site-name {
 	text-align: center;
@@ -21,7 +41,6 @@ header {
 }
 
 // Sections of the front page.
-
 .wm-front-page-section{
 	margin: 2em 0 0;
 	padding: 2rem 0;

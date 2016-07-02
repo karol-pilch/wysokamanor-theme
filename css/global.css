@@ -7,20 +7,48 @@
 body {
   background-color: #FFF7EE;
   color: #331B00;
+  font-size: 1.3em;
 }
 
-/* line 12, sass/global.scss */
+/* line 14, sass/global.scss */
 header {
   padding: 2em 0;
   background-color: #B38B5E;
   box-shadow: 0 1.5em 2em -1em rgba(70, 38, 0, 0.2);
 }
 
-/* line 18, sass/global.scss */
+/* line 20, sass/global.scss */
+.wm-page-title {
+  text-align: center;
+}
+/* line 23, sass/global.scss */
+.wm-page-title h1 {
+  display: inline-block;
+  font-weight: normal;
+  padding: 1em;
+  border-bottom: 1px solid #462600;
+}
+
+/* line 31, sass/global.scss */
+article {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.9em;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
+}
+/* line 42, sass/global.scss */
+article p {
+  text-indent: 2em;
+}
+
+/* line 47, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 21, sass/global.scss */
+/* line 50, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -29,34 +57,34 @@ header {
   content: "* * *";
 }
 
-/* line 30, sass/global.scss */
+/* line 59, sass/global.scss */
 footer.wm-footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(200, 200, 200, 0.8);
   text-align: center;
 }
-/* line 35, sass/global.scss */
+/* line 64, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 40, sass/global.scss */
+/* line 69, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 46, sass/global.scss */
+/* line 75, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
-/* line 51, sass/global.scss */
+/* line 80, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 55, sass/global.scss */
+/* line 84, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

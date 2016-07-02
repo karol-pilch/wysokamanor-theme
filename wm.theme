@@ -109,6 +109,17 @@ function wm_preprocess_page(&$variables) {
 			case 'story_page':
 				$variables['#attached']['library'][] = 'wm/story-page';
 				break;
+
+			case 'illustrated_page':
+				$variables['#attached']['library'][] = 'wm/illustrated-page';
+				break;
 		}
+	}
+}
+
+function wm_preprocess_form(&$variables) {
+	$form_name = isset($variables['element']['form_id']['#value']) ? $variables['element']['form_id']['#value'] : '';
+	if ($form_name == 'contact_message_stay_enquiry_form') {
+		$variables['#attached']['library'][] = 'wm/contact';
 	}
 }

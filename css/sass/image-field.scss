@@ -1,4 +1,7 @@
-.wm-image-field {
+@import 'palette';
+
+// The image field
+.wm-image-field, .wm-illustration {
 	display: inline-block;
 	position: relative;
 	line-height: 0;
@@ -38,6 +41,68 @@
 		max-width: 100%;
 		height: auto;
 	}
+}
+
+// Side images
+.wm-story-side-images, .wm-illustrations {
+	float: right;
+	margin-left: 1em;
+
+	.wm-image-field, .wm-illustration {
+		display: block;
+		margin: 0 0 1em 0;
+
+		border: 0.5em solid lighten($lighter, 10%);
+		box-shadow: 0.2em 0.2em 0.8em $transparent;
+
+		.wm-image-author {
+			display: none;
+			// font-size: 0.6em;
+		}
+	}
+}
 
 
+// Footer images
+.wm-story-footer-image {
+	margin-top: 5em;
+
+	background-color: lighten($lighter, 10%);
+	box-shadow: 0.2em 0.2em 0.8em $transparent;
+
+	padding: 2em;
+
+	img {
+		box-shadow: 0.2em 0.2em 1.5em -0.1em transparentize($transparent, 0.5);
+	}
+
+	.wm-image-label {
+		display: block;
+		margin-top: 2em;
+		padding: 0 2em;
+		text-align: center;
+		font-style: italic;
+		font-size: 1.3em;
+
+		p {
+			line-height: 1.5em;
+			text-indent: 0;
+		}
+	}
+
+	.wm-image-author {
+		background-color: inherit;
+		border: none;
+		box-shadow: none;
+		font-size: 0.8em;
+		bottom: -1em;
+
+		a, span {
+			color: $darker;
+
+			&:hover, &:active {
+				color: $normal;
+			}
+		}
+	}
 }

@@ -7,12 +7,41 @@
 body {
 	background-color: $lighter;
 	color: $darker;
+
+	font-size: 1.3em;
 }
 
 header {
 	padding: 2em 0;
 	background-color: $light;
 	box-shadow: 0 1.5em 2em -1em $transparent;
+}
+
+.wm-page-title {
+	text-align: center;
+
+	h1 {
+		display: inline-block;
+		font-weight: normal;
+		padding: 1em;
+		border-bottom: 1px solid $dark;
+	}
+}
+
+article {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	font-size: 1.1em;
+	line-height: 1.9em;
+
+	-webkit-hyphens: auto;
+	hyphens: auto;
+
+	text-align: justify;
+	p {
+		text-indent: 2em;
+	}
 }
 
 .wm-region.wm-bottom {

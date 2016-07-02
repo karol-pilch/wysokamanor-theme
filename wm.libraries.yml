@@ -53,6 +53,20 @@ story-page:
     theme:
       css/story.css: {}
 
+# Illustrated pages
+illustrated-page:
+  version: 1.x
+  css:
+    theme:
+      css/illustrated-page.css: {}
+
+# Contact page
+contact:
+  version: 1.x
+  css:
+    theme:
+      css/contact.css: {}
+
 # Example:
 # cuddly-slider:
 #   version: 1.x

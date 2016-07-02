@@ -1,13 +1,13 @@
 @charset "UTF-8";
-/* line 1, sass/image-field.scss */
-.wm-image-field {
+/* line 4, sass/image-field.scss */
+.wm-image-field, .wm-illustration {
   display: inline-block;
   position: relative;
   line-height: 0;
   max-width: 1200px;
 }
-/* line 7, sass/image-field.scss */
-.wm-image-field .wm-image-author {
+/* line 10, sass/image-field.scss */
+.wm-image-field .wm-image-author, .wm-illustration .wm-image-author {
   position: absolute;
   right: 0.5px;
   bottom: 1px;
@@ -17,25 +17,84 @@
   box-shadow: -0.1em -0.1em 0.5em rgba(0, 0, 0, 0.4);
   border-top-left-radius: 1em;
 }
-/* line 19, sass/image-field.scss */
-.wm-image-field .wm-image-author a, .wm-image-field .wm-image-author span {
+/* line 22, sass/image-field.scss */
+.wm-image-field .wm-image-author a, .wm-image-field .wm-image-author span, .wm-illustration .wm-image-author a, .wm-illustration .wm-image-author span {
   color: #DDD;
   text-decoration: none;
 }
-/* line 23, sass/image-field.scss */
-.wm-image-field .wm-image-author a:before, .wm-image-field .wm-image-author span:before {
+/* line 26, sass/image-field.scss */
+.wm-image-field .wm-image-author a:before, .wm-image-field .wm-image-author span:before, .wm-illustration .wm-image-author a:before, .wm-illustration .wm-image-author span:before {
   content: "©";
 }
-/* line 27, sass/image-field.scss */
-.wm-image-field .wm-image-author a:hover, .wm-image-field .wm-image-author a:active, .wm-image-field .wm-image-author span:hover, .wm-image-field .wm-image-author span:active {
+/* line 30, sass/image-field.scss */
+.wm-image-field .wm-image-author a:hover, .wm-image-field .wm-image-author a:active, .wm-image-field .wm-image-author span:hover, .wm-image-field .wm-image-author span:active, .wm-illustration .wm-image-author a:hover, .wm-illustration .wm-image-author a:active, .wm-illustration .wm-image-author span:hover, .wm-illustration .wm-image-author span:active {
   color: #FFF;
 }
-/* line 33, sass/image-field.scss */
-.wm-image-field .wm-image-label {
+/* line 36, sass/image-field.scss */
+.wm-image-field .wm-image-label, .wm-illustration .wm-image-label {
   display: none;
 }
-/* line 37, sass/image-field.scss */
-.wm-image-field img {
+/* line 40, sass/image-field.scss */
+.wm-image-field img, .wm-illustration img {
   max-width: 100%;
   height: auto;
+}
+
+/* line 47, sass/image-field.scss */
+.wm-story-side-images, .wm-illustrations {
+  float: right;
+  margin-left: 1em;
+}
+/* line 51, sass/image-field.scss */
+.wm-story-side-images .wm-image-field, .wm-story-side-images .wm-illustration, .wm-illustrations .wm-image-field, .wm-illustrations .wm-illustration {
+  display: block;
+  margin: 0 0 1em 0;
+  border: 0.5em solid white;
+  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
+}
+/* line 58, sass/image-field.scss */
+.wm-story-side-images .wm-image-field .wm-image-author, .wm-story-side-images .wm-illustration .wm-image-author, .wm-illustrations .wm-image-field .wm-image-author, .wm-illustrations .wm-illustration .wm-image-author {
+  display: none;
+}
+
+/* line 67, sass/image-field.scss */
+.wm-story-footer-image {
+  margin-top: 5em;
+  background-color: white;
+  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
+  padding: 2em;
+}
+/* line 75, sass/image-field.scss */
+.wm-story-footer-image img {
+  box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(70, 38, 0, 0);
+}
+/* line 79, sass/image-field.scss */
+.wm-story-footer-image .wm-image-label {
+  display: block;
+  margin-top: 2em;
+  padding: 0 2em;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+}
+/* line 87, sass/image-field.scss */
+.wm-story-footer-image .wm-image-label p {
+  line-height: 1.5em;
+  text-indent: 0;
+}
+/* line 93, sass/image-field.scss */
+.wm-story-footer-image .wm-image-author {
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+  font-size: 0.8em;
+  bottom: -1em;
+}
+/* line 100, sass/image-field.scss */
+.wm-story-footer-image .wm-image-author a, .wm-story-footer-image .wm-image-author span {
+  color: #331B00;
+}
+/* line 103, sass/image-field.scss */
+.wm-story-footer-image .wm-image-author a:hover, .wm-story-footer-image .wm-image-author a:active, .wm-story-footer-image .wm-image-author span:hover, .wm-story-footer-image .wm-image-author span:active {
+  color: #7A5326;
 }

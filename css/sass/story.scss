@@ -1,9 +1,5 @@
 @import 'palette';
 
-body {
-	font-size: 1.3em;
-}
-
 .wm-page-title {
 	text-align: center;
 
@@ -15,11 +11,13 @@ body {
 	}
 }
 
+// Author
 .wm-story-author-field {
-	float: right;
-	width: 50%;
-	margin: 1em;
-	padding: 1em;
+	float: left;
+	width: 14em;
+	margin: 0 1em 1em 0;
+	padding: 0.5em 1em 1em;
+	color: $dark;
 
 	background-color: lighten($lighter, 10%);
 
@@ -28,9 +26,8 @@ body {
 
 .wm-story-author-face {
 	float: left;
-	margin-right: 1em;
-	margin-bottom: 1em;
-	max-height: 8em;
+	margin: 0 0.5em 0.5em 0;
+	max-height: 5em;
 
 	img {
 		box-shadow: 0.2em 0.2em 1.5em -0.1em $transparent;
@@ -42,13 +39,22 @@ body {
 .wm-story-author-name {
 	text-align: center;
 	font-size: 1.1em;
+	margin: 0 0 0.5em;
 }
 
 .wm-story-author-about {
 	font-size: 0.9em;
+	line-height: 1.1em;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 
 	p {
 		text-indent: 1em;
 		text-align: justify;
+		margin-top: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
