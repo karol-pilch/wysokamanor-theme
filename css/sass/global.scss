@@ -44,6 +44,18 @@ article {
 	}
 }
 
+a {
+	color: $normal;
+	text-decoration: none;
+
+	transition: color 0.3s, text-decoration 0.3s;
+
+	&:hover, &:active {
+		color: $light;
+		text-decoration: underline;
+	}
+}
+
 .wm-region.wm-bottom {
 	margin-top: 3em;
 

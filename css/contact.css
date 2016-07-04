@@ -1,27 +1,83 @@
-/* line 3, sass/contact.scss */
+/* line 4, sass/contact.scss */
 .region-content {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 9, sass/contact.scss */
+/* line 10, sass/contact.scss */
 #block-wm-contactinformation {
   padding: 0 2em;
 }
 
-/* line 13, sass/contact.scss */
+/* line 14, sass/contact.scss */
+#block-contactprivacystatement {
+  font-size: 0.8em;
+}
+/* line 17, sass/contact.scss */
+#block-contactprivacystatement p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/* line 23, sass/contact.scss */
+.block:not(#block-contactprivacystatement) h2 {
+  margin: 1rem auto;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 36, sass/contact.scss */
+.block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
+  content: '~';
+  padding: 0 1em;
+}
+
+/* line 42, sass/contact.scss */
+#block-wm-additionalcontactinformation {
+  text-align: center;
+}
+/* line 45, sass/contact.scss */
+#block-wm-additionalcontactinformation > div {
+  text-align: left;
+  display: inline-block;
+}
+/* line 49, sass/contact.scss */
+#block-wm-additionalcontactinformation > div h3 {
+  font-weight: normal;
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+}
+/* line 54, sass/contact.scss */
+#block-wm-additionalcontactinformation > div h3:before {
+  content: '- ';
+  font-weight: normal;
+}
+/* line 60, sass/contact.scss */
+#block-wm-additionalcontactinformation > div p {
+  margin-top: 0.2em;
+}
+/* line 64, sass/contact.scss */
+#block-wm-additionalcontactinformation > div iframe {
+  box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);
+}
+
+/* line 71, sass/contact.scss */
 form {
   margin: 0 1em;
 }
 
-/* line 18, sass/contact.scss */
+/* line 76, sass/contact.scss */
 label, label.form-required {
   width: 11em;
   display: inline-block;
   text-align: right;
   padding-right: 1em;
 }
-/* line 24, sass/contact.scss */
+/* line 82, sass/contact.scss */
 label:after, label.form-required:after {
   content: ':';
   display: inline;
@@ -32,12 +88,12 @@ label:after, label.form-required:after {
   margin: auto;
 }
 
-/* line 36, sass/contact.scss */
+/* line 94, sass/contact.scss */
 .form-type-textfield input, .form-type-email input {
   width: calc(100% - 11em - 0.3em);
 }
 
-/* line 42, sass/contact.scss */
+/* line 100, sass/contact.scss */
 .form-item input, .form-item textarea {
   border: none;
   background-color: transparent;
@@ -46,12 +102,12 @@ label:after, label.form-required:after {
   border-bottom: 3px solid rgba(70, 38, 0, 0.5);
   transition: background-color 0.3s, border-color 0.3s;
 }
-/* line 52, sass/contact.scss */
+/* line 110, sass/contact.scss */
 .form-item input:focus, .form-item textarea:focus {
   background-color: white;
   border-color: #462600;
 }
-/* line 58, sass/contact.scss */
+/* line 116, sass/contact.scss */
 .form-item textarea {
   margin-top: 0.8em;
   border: solid rgba(70, 38, 0, 0.5);
@@ -59,15 +115,15 @@ label:after, label.form-required:after {
   border-radius: 0.1em;
 }
 
-/* line 67, sass/contact.scss */
+/* line 125, sass/contact.scss */
 .form-actions {
   text-align: center;
 }
-/* line 70, sass/contact.scss */
+/* line 128, sass/contact.scss */
 .form-actions input#edit-preview {
   display: none;
 }
-/* line 74, sass/contact.scss */
+/* line 132, sass/contact.scss */
 .form-actions input#edit-submit {
   display: inline-block;
   border: none;
@@ -79,35 +135,8 @@ label:after, label.form-required:after {
   outline: none;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
-/* line 88, sass/contact.scss */
+/* line 146, sass/contact.scss */
 .form-actions input#edit-submit:hover, .form-actions input#edit-submit:focus {
   background-color: #b47b38;
   box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);
-}
-
-/* line 95, sass/contact.scss */
-#block-contactprivacystatement {
-  font-size: 0.8em;
-}
-/* line 98, sass/contact.scss */
-#block-contactprivacystatement p {
-  margin: 0;
-  line-height: 1.5em;
-}
-
-/* line 104, sass/contact.scss */
-.block:not(#block-contactprivacystatement) h2 {
-  margin: 1rem auto 2rem;
-  width: 100%;
-  text-align: center;
-  font-size: 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  font-weight: normal;
-  font-style: italic;
-}
-/* line 117, sass/contact.scss */
-.block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
-  content: '~';
-  padding: 0 1em;
 }

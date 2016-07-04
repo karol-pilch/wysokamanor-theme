@@ -45,10 +45,22 @@ article p {
 }
 
 /* line 47, sass/global.scss */
+a {
+  color: #7A5326;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+/* line 53, sass/global.scss */
+a:hover, a:active {
+  color: #B38B5E;
+  text-decoration: underline;
+}
+
+/* line 59, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 50, sass/global.scss */
+/* line 62, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -57,34 +69,34 @@ article p {
   content: "* * *";
 }
 
-/* line 59, sass/global.scss */
+/* line 71, sass/global.scss */
 footer.wm-footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(200, 200, 200, 0.8);
   text-align: center;
 }
-/* line 64, sass/global.scss */
+/* line 76, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 69, sass/global.scss */
+/* line 81, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 75, sass/global.scss */
+/* line 87, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
-/* line 80, sass/global.scss */
+/* line 92, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 84, sass/global.scss */
+/* line 96, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

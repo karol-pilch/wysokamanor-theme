@@ -1,5 +1,6 @@
 @import 'palette';
 
+// General and block layout
 .region-content {
 	max-width: 1200px;
 
@@ -10,6 +11,63 @@
 	padding: 0 2em;
 }
 
+#block-contactprivacystatement {
+	font-size: 0.8em;
+
+	p {
+		margin: 0;
+		line-height: 1.5em;
+	}
+}
+
+.block:not(#block-contactprivacystatement) h2 {
+	margin: 1rem auto;
+	width: 100%;
+
+	text-align: center;
+	font-size: 2em;
+
+	white-space: nowrap;
+	overflow: hidden;
+
+	font-weight: normal;
+	font-style: italic;
+
+	&:before, &:after {
+		content: '~';
+		padding: 0 1em;
+	}
+}
+
+#block-wm-additionalcontactinformation {
+	text-align: center;
+
+	> div {
+		text-align: left;
+		display: inline-block;
+
+		h3 {
+			font-weight: normal;
+			font-size: 1.3em;
+			margin-bottom: 0.2em;
+
+			&:before {
+				content: '- ';
+				font-weight: normal;
+			}
+		}
+
+		p {
+			margin-top: 0.2em;
+		}
+
+		iframe {
+			box-shadow: 0.5em 0.5em 1em $transparent;
+		}
+	}
+}
+
+// The contact form
 form {
 	margin: 0 1em;
 }
@@ -89,33 +147,5 @@ label, label.form-required {
 			background-color: lighten($normal, 15%);
 			box-shadow: 0.5em 0.5em 1em $transparent;
 		}
-	}
-}
-
-#block-contactprivacystatement {
-	font-size: 0.8em;
-
-	p {
-		margin: 0;
-		line-height: 1.5em;
-	}
-}
-
-.block:not(#block-contactprivacystatement) h2 {
-	margin: 1rem auto 2rem;
-	width: 100%;
-
-	text-align: center;
-	font-size: 2em;
-
-	white-space: nowrap;
-	overflow: hidden;
-
-	font-weight: normal;
-	font-style: italic;
-
-	&:before, &:after {
-		content: '~';
-		padding: 0 1em;
 	}
 }
