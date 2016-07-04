@@ -25,7 +25,7 @@
 .wm-story-author-face {
   float: left;
   margin: 0 0.5em 0.5em 0;
-  max-height: 5em;
+  height: 5em;
 }
 /* line 32, sass/story.scss */
 .wm-story-author-face img {
