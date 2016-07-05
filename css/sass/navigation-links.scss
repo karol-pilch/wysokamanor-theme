@@ -37,6 +37,11 @@
 		background-size: cover;
 	}
 
+	// Special case for Contact menu item since there's no way to include the menu image for it.
+	.wm-link-contact .wm-link-icon {
+		background-image: url('../images/contact.jpg');
+	}
+
 	a, a:hover {
 		text-decoration: none;
 		color: black;

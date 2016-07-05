@@ -31,7 +31,11 @@
   background-color: rgba(19, 10, 0, 0.2);
   background-size: cover;
 }
-/* line 40, sass/navigation-links.scss */
+/* line 41, sass/navigation-links.scss */
+.wm-navigation-links .wm-link-contact .wm-link-icon {
+  background-image: url("../images/contact.jpg");
+}
+/* line 45, sass/navigation-links.scss */
 .wm-navigation-links a, .wm-navigation-links a:hover {
   text-decoration: none;
   color: black;
