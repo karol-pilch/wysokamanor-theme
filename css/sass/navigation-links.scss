@@ -1,4 +1,5 @@
 @import 'palette';
+@import 'breakpoints';
 
 .wm-navigation-links {
 
@@ -23,6 +24,12 @@
 
 		font-size: 1.5rem;
 		line-height: 2em;
+
+		@include media('mobile') {
+			line-height: 1em;
+			vertical-align: -1rem;
+			display: inline-block;
+		}
 	}
 
 	.wm-link-icon {

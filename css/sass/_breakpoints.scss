@@ -1,0 +1,5 @@
+@mixin media($break-name) {
+	@if $break-name == 'mobile' {
+		@media only screen and (max-width: 768px) { @content; }
+	}
+}

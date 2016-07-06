@@ -1,14 +1,14 @@
-/* line 3, sass/menu-main.scss */
+/* line 4, sass/menu-main.scss */
 .supernav {
   text-align: center;
 }
 
-/* line 7, sass/menu-main.scss */
+/* line 8, sass/menu-main.scss */
 .menu--main {
   display: inline-block;
   max-width: 100%;
 }
-/* line 11, sass/menu-main.scss */
+/* line 12, sass/menu-main.scss */
 .menu--main .wm-navigation-links {
   display: flex;
   flex-wrap: wrap;
@@ -17,19 +17,32 @@
   background-color: #bb976f;
   box-shadow: 0.3em 0.3em 0.5em rgba(70, 38, 0, 0.2);
 }
-/* line 20, sass/menu-main.scss */
+@media only screen and (max-width: 768px) {
+  /* line 12, sass/menu-main.scss */
+  .menu--main .wm-navigation-links {
+    justify-content: flex-start;
+  }
+}
+/* line 25, sass/menu-main.scss */
 .menu--main .wm-navigation-links li {
   min-width: 0;
 }
-/* line 24, sass/menu-main.scss */
+@media only screen and (max-width: 768px) {
+  /* line 25, sass/menu-main.scss */
+  .menu--main .wm-navigation-links li {
+    padding: 0.25em 0.5em;
+    width: 100%;
+  }
+}
+/* line 34, sass/menu-main.scss */
 .menu--main .wm-navigation-links li:last-child {
   border-right-width: 1px;
 }
-/* line 28, sass/menu-main.scss */
+/* line 38, sass/menu-main.scss */
 .menu--main .wm-navigation-links li a.active .wm-link-icon {
   box-shadow: 0 0 0.3em 0.1em rgba(255, 247, 238, 0.8);
 }
-/* line 32, sass/menu-main.scss */
+/* line 42, sass/menu-main.scss */
 .menu--main .wm-navigation-links li .wm-link-body {
   white-space: nowrap;
   overflow: hidden;

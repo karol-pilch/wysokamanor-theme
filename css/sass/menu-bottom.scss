@@ -1,10 +1,12 @@
 @import 'palette';
+@import 'breakpoints';
 
 .menu--front-page-links {
-	width: 38em;
-	margin: 3em auto;
+	margin: 3em 0;
+	text-align: center;
 
 	.wm-navigation-links {
+		display: inline-block;
 
 		.active {
 			display: none;

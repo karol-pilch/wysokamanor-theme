@@ -1,27 +1,40 @@
-/* line 3, sass/global.scss */
+/* line 4, sass/global.scss */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* line 7, sass/global.scss */
+/* line 8, sass/global.scss */
 body {
   background-color: #FFF7EE;
   color: #331B00;
   font-size: 1.3em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 8, sass/global.scss */
+  body {
+    font-size: 0.9em;
+  }
+}
 
-/* line 14, sass/global.scss */
+/* line 19, sass/global.scss */
 header {
   padding: 2em 0;
   background-color: #B38B5E;
   box-shadow: 0 1.5em 2em -1em rgba(70, 38, 0, 0.2);
 }
+@media only screen and (max-width: 768px) {
+  /* line 19, sass/global.scss */
+  header {
+    padding: 0;
+    box-shadow: none;
+  }
+}
 
-/* line 20, sass/global.scss */
+/* line 30, sass/global.scss */
 .wm-page-title {
   text-align: center;
 }
-/* line 23, sass/global.scss */
+/* line 33, sass/global.scss */
 .wm-page-title h1 {
   display: inline-block;
   font-weight: normal;
@@ -29,7 +42,7 @@ header {
   border-bottom: 1px solid #462600;
 }
 
-/* line 31, sass/global.scss */
+/* line 41, sass/global.scss */
 article {
   max-width: 1200px;
   margin: 0 auto;
@@ -39,28 +52,28 @@ article {
   hyphens: auto;
   text-align: justify;
 }
-/* line 42, sass/global.scss */
+/* line 52, sass/global.scss */
 article p {
   text-indent: 2em;
 }
 
-/* line 47, sass/global.scss */
+/* line 57, sass/global.scss */
 a {
   color: #7A5326;
   text-decoration: none;
   transition: color 0.3s, text-decoration 0.3s;
 }
-/* line 53, sass/global.scss */
+/* line 63, sass/global.scss */
 a:hover, a:active {
   color: #B38B5E;
   text-decoration: underline;
 }
 
-/* line 59, sass/global.scss */
+/* line 69, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 62, sass/global.scss */
+/* line 72, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -69,34 +82,61 @@ a:hover, a:active {
   content: "* * *";
 }
 
-/* line 71, sass/global.scss */
+/* line 81, sass/global.scss */
 footer.wm-footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(200, 200, 200, 0.8);
   text-align: center;
+  padding: 1em;
 }
-/* line 76, sass/global.scss */
+/* line 88, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 81, sass/global.scss */
+/* line 93, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 87, sass/global.scss */
+/* line 99, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
-/* line 92, sass/global.scss */
+@media only screen and (max-width: 768px) {
+  /* line 99, sass/global.scss */
+  footer.wm-footer .block {
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+  }
+}
+/* line 110, sass/global.scss */
+footer.wm-footer :last-child {
+  margin-bottom: 0;
+}
+/* line 114, sass/global.scss */
+footer.wm-footer :first-child {
+  margin-top: 0;
+}
+/* line 118, sass/global.scss */
+footer.wm-footer .menu {
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 118, sass/global.scss */
+  footer.wm-footer .menu {
+    text-align: center;
+  }
+}
+/* line 126, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 96, sass/global.scss */
+/* line 130, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

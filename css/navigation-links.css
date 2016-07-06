@@ -1,26 +1,34 @@
-/* line 5, sass/navigation-links.scss */
+/* line 6, sass/navigation-links.scss */
 .wm-navigation-links a {
   position: relative;
   display: block;
   height: 3rem;
   transition: background-color 0.3s;
 }
-/* line 11, sass/navigation-links.scss */
+/* line 12, sass/navigation-links.scss */
 .wm-navigation-links a:hover {
   background-color: rgba(70, 38, 0, 0.2);
 }
-/* line 16, sass/navigation-links.scss */
+/* line 17, sass/navigation-links.scss */
 .wm-navigation-links li {
   padding: 0;
 }
-/* line 20, sass/navigation-links.scss */
+/* line 21, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-body {
   margin-left: 2.5rem;
   padding: 0 0.4em;
   font-size: 1.5rem;
   line-height: 2em;
 }
-/* line 28, sass/navigation-links.scss */
+@media only screen and (max-width: 768px) {
+  /* line 21, sass/navigation-links.scss */
+  .wm-navigation-links .wm-link-body {
+    line-height: 1em;
+    vertical-align: -1rem;
+    display: inline-block;
+  }
+}
+/* line 35, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-icon {
   position: absolute;
   width: 2.5rem;
@@ -31,11 +39,11 @@
   background-color: rgba(19, 10, 0, 0.2);
   background-size: cover;
 }
-/* line 41, sass/navigation-links.scss */
+/* line 48, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-contact .wm-link-icon {
   background-image: url("../images/contact.jpg");
 }
-/* line 45, sass/navigation-links.scss */
+/* line 52, sass/navigation-links.scss */
 .wm-navigation-links a, .wm-navigation-links a:hover {
   text-decoration: none;
   color: black;

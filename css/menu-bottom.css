@@ -1,23 +1,27 @@
-/* line 3, sass/menu-bottom.scss */
+/* line 4, sass/menu-bottom.scss */
 .menu--front-page-links {
-  width: 38em;
-  margin: 3em auto;
+  margin: 3em 0;
+  text-align: center;
 }
-/* line 9, sass/menu-bottom.scss */
+/* line 8, sass/menu-bottom.scss */
+.menu--front-page-links .wm-navigation-links {
+  display: inline-block;
+}
+/* line 11, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links .active {
   display: none;
 }
-/* line 13, sass/menu-bottom.scss */
+/* line 15, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links li {
   margin: 1em 0;
 }
-/* line 17, sass/menu-bottom.scss */
+/* line 19, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links a {
   transition: border-color 0.2s;
   border: 0 solid transparent;
   border-width: 0 5px;
 }
-/* line 22, sass/menu-bottom.scss */
+/* line 24, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links a:hover {
   border-color: #462600;
 }

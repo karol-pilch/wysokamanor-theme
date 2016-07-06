@@ -1,4 +1,5 @@
 @import 'palette';
+@import 'breakpoints';
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -9,12 +10,21 @@ body {
 	color: $darker;
 
 	font-size: 1.3em;
+
+	@include media('mobile') {
+		font-size: 0.9em;
+	}
 }
 
 header {
 	padding: 2em 0;
 	background-color: $light;
 	box-shadow: 0 1.5em 2em -1em $transparent;
+
+	@include media('mobile') {
+		padding: 0;
+		box-shadow: none;
+	}
 }
 
 .wm-page-title {
@@ -73,6 +83,8 @@ footer.wm-footer {
 	color: rgba(200, 200, 200, 0.8);
 	text-align: center;
 
+	padding: 1em;
+
 	a {
 		color: rgba(255, 255, 255, 0.8);
 		text-decoration: none;
@@ -87,6 +99,28 @@ footer.wm-footer {
 	.block {
 		display: inline-block;
 		margin: 1em 3em;
+
+		@include media('mobile') {
+			display: block;
+			text-align: center;
+			margin: 1em auto;
+		}
+	}
+
+	:last-child {
+		margin-bottom: 0;
+	}
+
+	:first-child {
+		margin-top: 0;
+	}
+
+	.menu {
+		margin: 0;
+
+		@include media('mobile') {
+			text-align: center;
+		}
 	}
 
 	li {
