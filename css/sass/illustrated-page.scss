@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 h2.wm-section-title {
 	margin: 1rem auto 2rem;
 	width: 100%;
@@ -15,6 +17,15 @@ h2.wm-section-title {
 		content: '~';
 		padding: 0 1em;
 	}
+
+	@include media('mobile') {
+		white-space: normal;
+		font-size: 1.7em;
+
+		&:before, &:after {
+			display: none;
+		}
+	}
 }
 
 .wm-section {
@@ -25,10 +36,16 @@ h2.wm-section-title {
 
 	-webkit-hyphens: none;
 	hyphens: none;
+
+	@include media('mobile') {
+		margin: 0;
+		padding: 0;
+	}
 }
 
-.wm-secton-content {
-	p:last-child {
-		margin-bottom: 0;
+.wm-section-content {
+	@include media('mobile') {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 }

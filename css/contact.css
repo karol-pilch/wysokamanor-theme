@@ -1,25 +1,38 @@
-/* line 4, sass/contact.scss */
+/* line 5, sass/contact.scss */
 .region-content {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  /* line 5, sass/contact.scss */
+  .region-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
 
-/* line 10, sass/contact.scss */
+/* line 16, sass/contact.scss */
 #block-wm-contactinformation {
   padding: 0 2em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 16, sass/contact.scss */
+  #block-wm-contactinformation {
+    padding: 0;
+  }
+}
 
-/* line 14, sass/contact.scss */
+/* line 24, sass/contact.scss */
 #block-contactprivacystatement {
   font-size: 0.8em;
 }
-/* line 17, sass/contact.scss */
+/* line 27, sass/contact.scss */
 #block-contactprivacystatement p {
   margin: 0;
   line-height: 1.5em;
 }
 
-/* line 23, sass/contact.scss */
+/* line 33, sass/contact.scss */
 .block:not(#block-contactprivacystatement) h2 {
   margin: 1rem auto;
   width: 100%;
@@ -30,54 +43,90 @@
   font-weight: normal;
   font-style: italic;
 }
-/* line 36, sass/contact.scss */
+/* line 46, sass/contact.scss */
 .block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
   content: '~';
   padding: 0 1em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 33, sass/contact.scss */
+  .block:not(#block-contactprivacystatement) h2 {
+    white-space: normal;
+    font-size: 1.7em;
+  }
+  /* line 55, sass/contact.scss */
+  .block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
+    display: none;
+  }
+}
 
-/* line 42, sass/contact.scss */
+/* line 61, sass/contact.scss */
 #block-wm-additionalcontactinformation {
   text-align: center;
 }
-/* line 45, sass/contact.scss */
-#block-wm-additionalcontactinformation > div {
+/* line 64, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-contact-details {
   text-align: left;
   display: inline-block;
 }
-/* line 49, sass/contact.scss */
-#block-wm-additionalcontactinformation > div h3 {
+/* line 68, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-contact-details h3 {
   font-weight: normal;
   font-size: 1.3em;
   margin-bottom: 0.2em;
 }
-/* line 54, sass/contact.scss */
-#block-wm-additionalcontactinformation > div h3:before {
+/* line 73, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-contact-details h3:before {
   content: '- ';
   font-weight: normal;
 }
-/* line 60, sass/contact.scss */
-#block-wm-additionalcontactinformation > div p {
+/* line 79, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-contact-details p {
   margin-top: 0.2em;
 }
-/* line 64, sass/contact.scss */
-#block-wm-additionalcontactinformation > div iframe {
+/* line 83, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-contact-details .wm-map-link {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 83, sass/contact.scss */
+  #block-wm-additionalcontactinformation .wm-contact-details .wm-map-link {
+    display: inline;
+  }
+}
+/* line 93, sass/contact.scss */
+#block-wm-additionalcontactinformation .wm-map iframe {
   box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 92, sass/contact.scss */
+  #block-wm-additionalcontactinformation .wm-map {
+    display: none;
+  }
 }
 
-/* line 71, sass/contact.scss */
+/* line 106, sass/contact.scss */
 form {
   margin: 0 1em;
 }
 
-/* line 76, sass/contact.scss */
+/* line 111, sass/contact.scss */
 label, label.form-required {
   width: 11em;
   display: inline-block;
   text-align: right;
   padding-right: 1em;
 }
-/* line 82, sass/contact.scss */
+@media only screen and (max-width: 768px) {
+  /* line 111, sass/contact.scss */
+  label, label.form-required {
+    display: block;
+    text-align: left;
+  }
+}
+/* line 122, sass/contact.scss */
 label:after, label.form-required:after {
   content: ':';
   display: inline;
@@ -88,12 +137,18 @@ label:after, label.form-required:after {
   margin: auto;
 }
 
-/* line 94, sass/contact.scss */
+/* line 134, sass/contact.scss */
 .form-type-textfield input, .form-type-email input {
   width: calc(100% - 11em - 0.3em);
 }
+@media only screen and (max-width: 768px) {
+  /* line 134, sass/contact.scss */
+  .form-type-textfield input, .form-type-email input {
+    width: 100%;
+  }
+}
 
-/* line 100, sass/contact.scss */
+/* line 144, sass/contact.scss */
 .form-item input, .form-item textarea {
   border: none;
   background-color: transparent;
@@ -102,12 +157,12 @@ label:after, label.form-required:after {
   border-bottom: 3px solid rgba(70, 38, 0, 0.5);
   transition: background-color 0.3s, border-color 0.3s;
 }
-/* line 110, sass/contact.scss */
+/* line 154, sass/contact.scss */
 .form-item input:focus, .form-item textarea:focus {
   background-color: white;
   border-color: #462600;
 }
-/* line 116, sass/contact.scss */
+/* line 160, sass/contact.scss */
 .form-item textarea {
   margin-top: 0.8em;
   border: solid rgba(70, 38, 0, 0.5);
@@ -115,15 +170,15 @@ label:after, label.form-required:after {
   border-radius: 0.1em;
 }
 
-/* line 125, sass/contact.scss */
+/* line 169, sass/contact.scss */
 .form-actions {
   text-align: center;
 }
-/* line 128, sass/contact.scss */
+/* line 172, sass/contact.scss */
 .form-actions input#edit-preview {
   display: none;
 }
-/* line 132, sass/contact.scss */
+/* line 176, sass/contact.scss */
 .form-actions input#edit-submit {
   display: inline-block;
   border: none;
@@ -135,7 +190,7 @@ label:after, label.form-required:after {
   outline: none;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
-/* line 146, sass/contact.scss */
+/* line 190, sass/contact.scss */
 .form-actions input#edit-submit:hover, .form-actions input#edit-submit:focus {
   background-color: #b47b38;
   box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);

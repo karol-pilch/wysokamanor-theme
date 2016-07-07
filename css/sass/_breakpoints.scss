@@ -2,4 +2,8 @@
 	@if $break-name == 'mobile' {
 		@media only screen and (max-width: 768px) { @content; }
 	}
+
+	@if $break-name == 'wide' {
+		@media only screen and (min-width: 1200px) and (max-height: 800px) { @content }
+	}
 }

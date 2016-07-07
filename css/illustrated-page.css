@@ -1,4 +1,4 @@
-/* line 1, sass/illustrated-page.scss */
+/* line 3, sass/illustrated-page.scss */
 h2.wm-section-title {
   margin: 1rem auto 2rem;
   width: 100%;
@@ -9,13 +9,24 @@ h2.wm-section-title {
   font-weight: normal;
   font-style: italic;
 }
-/* line 14, sass/illustrated-page.scss */
+/* line 16, sass/illustrated-page.scss */
 h2.wm-section-title:before, h2.wm-section-title:after {
   content: '~';
   padding: 0 1em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 3, sass/illustrated-page.scss */
+  h2.wm-section-title {
+    white-space: normal;
+    font-size: 1.7em;
+  }
+  /* line 25, sass/illustrated-page.scss */
+  h2.wm-section-title:before, h2.wm-section-title:after {
+    display: none;
+  }
+}
 
-/* line 20, sass/illustrated-page.scss */
+/* line 31, sass/illustrated-page.scss */
 .wm-section {
   margin-top: 2em;
   overflow: auto;
@@ -24,8 +35,18 @@ h2.wm-section-title:before, h2.wm-section-title:after {
   -webkit-hyphens: none;
   hyphens: none;
 }
+@media only screen and (max-width: 768px) {
+  /* line 31, sass/illustrated-page.scss */
+  .wm-section {
+    margin: 0;
+    padding: 0;
+  }
+}
 
-/* line 31, sass/illustrated-page.scss */
-.wm-secton-content p:last-child {
-  margin-bottom: 0;
+@media only screen and (max-width: 768px) {
+  /* line 46, sass/illustrated-page.scss */
+  .wm-section-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }

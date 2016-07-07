@@ -55,16 +55,15 @@ body.page-node-type-front-page article p {
 @media only screen and (max-width: 768px) {
   /* line 55, sass/front.scss */
   .wm-front-page-section {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
     margin: 0;
+    padding: 1rem 0.5em;
   }
 }
-/* line 66, sass/front.scss */
+/* line 65, sass/front.scss */
 .wm-front-page-section.wm-titled {
   box-shadow: inset 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
 }
-/* line 70, sass/front.scss */
+/* line 69, sass/front.scss */
 .wm-front-page-section h2.wm-section-title {
   margin: 1rem auto 2rem;
   text-align: center;
@@ -74,15 +73,16 @@ body.page-node-type-front-page article p {
   font-weight: normal;
   font-style: italic;
 }
-/* line 82, sass/front.scss */
+/* line 81, sass/front.scss */
 .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
   content: '~';
   padding: 0 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 70, sass/front.scss */
+  /* line 69, sass/front.scss */
   .wm-front-page-section h2.wm-section-title {
     white-space: normal;
+    font-size: 2.2em;
   }
   /* line 90, sass/front.scss */
   .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {

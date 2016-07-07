@@ -58,9 +58,8 @@ body.page-node-type-front-page {
 	text-align: center;
 
 	@include media('mobile') {
-		padding-left: 0.5em;
-		padding-right: 0.5em;
 		margin: 0;
+		padding: 1rem 0.5em;
 	}
 
 	&.wm-titled {
@@ -86,6 +85,7 @@ body.page-node-type-front-page {
 
 		@include media('mobile') {
 			white-space: normal;
+			font-size: 2.2em;
 
 			&:before, &:after {
 				display: none;

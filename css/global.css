@@ -19,7 +19,7 @@ body {
 /* line 19, sass/global.scss */
 header {
   padding: 2em 0;
-  background-color: #B38B5E;
+  background-color: #c3a481;
   box-shadow: 0 1.5em 2em -1em rgba(70, 38, 0, 0.2);
 }
 @media only screen and (max-width: 768px) {
@@ -41,8 +41,15 @@ header {
   padding: 1em;
   border-bottom: 1px solid #462600;
 }
+@media only screen and (max-width: 768px) {
+  /* line 33, sass/global.scss */
+  .wm-page-title h1 {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+}
 
-/* line 41, sass/global.scss */
+/* line 46, sass/global.scss */
 article {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,28 +59,34 @@ article {
   hyphens: auto;
   text-align: justify;
 }
-/* line 52, sass/global.scss */
+/* line 57, sass/global.scss */
 article p {
   text-indent: 2em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 46, sass/global.scss */
+  article {
+    line-height: normal;
+  }
+}
 
-/* line 57, sass/global.scss */
+/* line 66, sass/global.scss */
 a {
   color: #7A5326;
   text-decoration: none;
   transition: color 0.3s, text-decoration 0.3s;
 }
-/* line 63, sass/global.scss */
+/* line 72, sass/global.scss */
 a:hover, a:active {
   color: #B38B5E;
   text-decoration: underline;
 }
 
-/* line 69, sass/global.scss */
+/* line 78, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 72, sass/global.scss */
+/* line 81, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -82,61 +95,61 @@ a:hover, a:active {
   content: "* * *";
 }
 
-/* line 81, sass/global.scss */
+/* line 90, sass/global.scss */
 footer.wm-footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(200, 200, 200, 0.8);
   text-align: center;
   padding: 1em;
 }
-/* line 88, sass/global.scss */
+/* line 97, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 93, sass/global.scss */
+/* line 102, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 99, sass/global.scss */
+/* line 108, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 99, sass/global.scss */
+  /* line 108, sass/global.scss */
   footer.wm-footer .block {
     display: block;
     text-align: center;
     margin: 1em auto;
   }
 }
-/* line 110, sass/global.scss */
+/* line 119, sass/global.scss */
 footer.wm-footer :last-child {
   margin-bottom: 0;
 }
-/* line 114, sass/global.scss */
+/* line 123, sass/global.scss */
 footer.wm-footer :first-child {
   margin-top: 0;
 }
-/* line 118, sass/global.scss */
+/* line 127, sass/global.scss */
 footer.wm-footer .menu {
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 118, sass/global.scss */
+  /* line 127, sass/global.scss */
   footer.wm-footer .menu {
     text-align: center;
   }
 }
-/* line 126, sass/global.scss */
+/* line 135, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 130, sass/global.scss */
+/* line 139, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

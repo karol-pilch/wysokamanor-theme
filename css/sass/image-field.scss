@@ -1,4 +1,5 @@
 @import 'palette';
+@import 'breakpoints';
 
 // The image field
 .wm-image-field, .wm-illustration {
@@ -6,6 +7,10 @@
 	position: relative;
 	line-height: 0;
 	max-width: 1200px;
+
+	@include media('wide') {
+		max-height: 700px;
+	}
 
 	.wm-image-author {
 		position: absolute;
@@ -39,6 +44,8 @@
 
 	img {
 		max-width: 100%;
+		max-height: 100%;
+		width: auto;
 		height: auto;
 	}
 }
@@ -48,6 +55,11 @@
 	float: right;
 	margin-left: 1em;
 
+	@include media('mobile') {
+		max-width: 25%;
+		margin: 0.5em;
+	}
+
 	.wm-image-field, .wm-illustration {
 		display: block;
 		margin: 0 0 1em 0;
@@ -55,9 +67,12 @@
 		border: 0.5em solid lighten($lighter, 10%);
 		box-shadow: 0.2em 0.2em 0.8em $transparent;
 
+		@include media('mobile') {
+			border-width: 0.1em;
+		}
+
 		.wm-image-author {
 			display: none;
-			// font-size: 0.6em;
 		}
 	}
 }
@@ -65,15 +80,33 @@
 
 // Footer images
 .wm-story-footer-image {
-	margin-top: 5em;
+	text-align: center;
 
-	background-color: lighten($lighter, 10%);
-	box-shadow: 0.2em 0.2em 0.8em $transparent;
+	.wm-image-field {
+		margin-top: 5em;
+		display: inline-block;
 
-	padding: 2em;
+		background-color: lighten($lighter, 10%);
+		box-shadow: 0.2em 0.2em 0.8em $transparent;
 
-	img {
-		box-shadow: 0.2em 0.2em 1.5em -0.1em transparentize($transparent, 0.5);
+		padding: 2em;
+
+		@include media('wide') {
+			max-height: 100%;
+		}
+
+		@include media('mobile') {
+			padding: 0;
+			margin: 0.5em;
+		}
+
+		img {
+			box-shadow: 0.2em 0.2em 1.5em -0.1em transparentize($transparent, 0.5);
+
+			@include media('wide') {
+				max-height: 700px;
+			}
+		}
 	}
 
 	.wm-image-label {
@@ -83,6 +116,10 @@
 		text-align: center;
 		font-style: italic;
 		font-size: 1.3em;
+
+		@include media('mobile') {
+			margin-top: 1em;
+		}
 
 		p {
 			line-height: 1.5em;
@@ -95,7 +132,6 @@
 		border: none;
 		box-shadow: none;
 		font-size: 0.8em;
-		bottom: -1em;
 
 		a, span {
 			color: $darker;

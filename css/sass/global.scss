@@ -18,7 +18,7 @@ body {
 
 header {
 	padding: 2em 0;
-	background-color: $light;
+	background-color: lighten($light, 10%);
 	box-shadow: 0 1.5em 2em -1em $transparent;
 
 	@include media('mobile') {
@@ -35,6 +35,11 @@ header {
 		font-weight: normal;
 		padding: 1em;
 		border-bottom: 1px solid $dark;
+
+		@include media('mobile') {
+			margin: 1rem 0;
+			padding: 0.5rem 0;
+		}
 	}
 }
 
@@ -51,6 +56,10 @@ article {
 	text-align: justify;
 	p {
 		text-indent: 2em;
+	}
+
+	@include media('mobile') {
+		line-height: normal;
 	}
 }
 

@@ -22,6 +22,7 @@
  */
 #}
 <div{{ attributes.addClass('wm-story-author-field') }}>
+	<div class="wm-field-label">Written by</div>
 	{% if content.field_story_author_name[0] %}
 		<h2 class="wm-story-author-name">{{ content.field_story_author_name[0]['#context'].value }}</h2>
 	{% endif %}

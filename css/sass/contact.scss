@@ -1,14 +1,24 @@
 @import 'palette';
+@import 'breakpoints';
 
 // General and block layout
 .region-content {
 	max-width: 1200px;
 
 	margin: 0 auto;
+
+	@include media('mobile') {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
 }
 
 #block-wm-contactinformation {
 	padding: 0 2em;
+
+	@include media('mobile') {
+		padding: 0;
+	}
 }
 
 #block-contactprivacystatement {
@@ -37,12 +47,21 @@
 		content: '~';
 		padding: 0 1em;
 	}
+
+	@include media('mobile') {
+		white-space: normal;
+		font-size: 1.7em;
+
+		&:before, &:after {
+			display: none;
+		}
+	}
 }
 
 #block-wm-additionalcontactinformation {
 	text-align: center;
 
-	> div {
+	.wm-contact-details {
 		text-align: left;
 		display: inline-block;
 
@@ -61,8 +80,24 @@
 			margin-top: 0.2em;
 		}
 
+		.wm-map-link {
+			display: none;
+
+			@include media('mobile') {
+				display: inline;
+			}
+		}
+	}
+
+	.wm-map {
 		iframe {
 			box-shadow: 0.5em 0.5em 1em $transparent;
+			width: 100%;
+			max-width: 800px;
+		}
+
+		@include media('mobile') {
+			display: none;
 		}
 	}
 }
@@ -79,6 +114,11 @@ label, label.form-required {
 	text-align: right;
 	padding-right: 1em;
 
+	@include media('mobile') {
+		display: block;
+		text-align: left;
+	}
+
 	&:after {
 		content: ':';
 		display: inline;
@@ -93,6 +133,10 @@ label, label.form-required {
 .form-type-textfield, .form-type-email {
 	input {
 		width: calc(100% - #{$label-width} - 0.3em);
+
+		@include media('mobile') {
+			width: 100%;
+		}
 	}
 }
 
@@ -136,7 +180,7 @@ label, label.form-required {
 		padding: 0.5em 1em;
 
 		font-size: 1.5em;
-		
+
 		color: $lighter;
 		background-color: $normal;
 		outline: none;
