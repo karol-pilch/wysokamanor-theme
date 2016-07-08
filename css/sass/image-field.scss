@@ -71,6 +71,10 @@
 			border-width: 0.1em;
 		}
 
+		img {
+			width: 100%;
+		}
+
 		.wm-image-author {
 			display: none;
 		}
@@ -102,6 +106,7 @@
 
 		img {
 			box-shadow: 0.2em 0.2em 1.5em -0.1em transparentize($transparent, 0.5);
+			max-height: 850px;
 
 			@include media('wide') {
 				max-height: 700px;
