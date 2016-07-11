@@ -45,6 +45,8 @@ image-field:
   css:
     theme:
       css/image-field.css: {}
+  js:
+    js/image-preview.js: {}
 
 # Story pages
 story-page:
