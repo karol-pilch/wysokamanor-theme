@@ -7,8 +7,6 @@ base theme: classy
 libraries:
   - wm/global-styling
   - wm/fonts
-dependencies:
-  - core/jquery
 regions:
   supernav: Super Navigation
   top: Content above main content

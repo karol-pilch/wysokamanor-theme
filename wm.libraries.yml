@@ -47,6 +47,9 @@ image-field:
       css/image-field.css: {}
   js:
     js/image-preview.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
 
 # Story pages
 story-page:

@@ -31,7 +31,6 @@
 		},
 
 		toggleHover: function (container, enable) {
-			console.log('Toggling to ' + enable);
 			$(container).toggleClass('wm-hover', enable);
 		},
 
