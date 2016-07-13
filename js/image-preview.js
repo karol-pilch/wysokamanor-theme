@@ -6,16 +6,13 @@
 			var isTouch = false;
 			$('body').on({
 				touchstart: function(evt) {
-					console.log('Touch on.');
 					isTouch = true;
 				},
 				mouseup: function(evt) {
 					isTouch = false;
-					console.log('Touch off (mouseup).');
 				},
 				click: function(evt) {
 					isTouch = false;
-					console.log('Touch off (click).');
 				}
 			});
 
@@ -25,7 +22,7 @@
 					if (!isTouch) {
 						Drupal.behaviors.wmImagePreview.toggleHover(this, true);
 					}
-				}, 
+				},
 				mouseleave: function (evt) {
 					if (!isTouch) {
 						Drupal.behaviors.wmImagePreview.toggleHover(this, false);
