@@ -1,20 +1,40 @@
 (function ($) {
 	Drupal.behaviors.wmImagePreview = {
 		attach: function (context, settings) {
+
+			// Hook up to touch events to figure out if we're touching or not
+			var isTouch = false;
+			$('body').on({
+				touchstart: function(evt) {
+					console.log('Touch on.');
+					isTouch = true;
+				},
+				mouseup: function(evt) {
+					isTouch = false;
+					console.log('Touch off (mouseup).');
+				},
+				click: function(evt) {
+					isTouch = false;
+					console.log('Touch off (click).');
+				}
+			});
+
 			// Expand / collapse front page images
 			$('.wm-front-page-section .wm-image-field').on({
-				touchend: function (evt) {
-					if (evt.hasFired) {
-						return;
-					}
-					Drupal.behaviors.wmImagePreview.expandPicture(this);
-					evt.hasFired = true;
-				}, 
 				mouseenter: function (evt) {
-					Drupal.behaviors.wmImagePreview.toggleHover(this, true);
+					if (!isTouch) {
+						Drupal.behaviors.wmImagePreview.toggleHover(this, true);
+					}
 				}, 
 				mouseleave: function (evt) {
-					Drupal.behaviors.wmImagePreview.toggleHover(this, false);
+					if (!isTouch) {
+						Drupal.behaviors.wmImagePreview.toggleHover(this, false);
+					}
+				},
+				mouseup: function(evt) {
+					if (isTouch) {
+						Drupal.behaviors.wmImagePreview.toggleHover(this);
+					}
 				}
 			});
 
