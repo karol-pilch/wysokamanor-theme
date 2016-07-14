@@ -38,7 +38,8 @@
 
 			// Show full-screen preview for side images and illustrations
 			$('.wm-story-side-images .wm-image-field, .wm-illustrations .wm-illustration').on('click', function (evt) {
-				Drupal.behaviors.wmImagePreview.showFull(this, 'FIGUREMEOUT');
+				var fullSrc = $(this).find('img').first().attr('data-full-src');
+				Drupal.behaviors.wmImagePreview.showFull(this, fullSrc);
 			});
 
 		},
@@ -52,7 +53,7 @@
 		},
 
 		showFull: function (container, src) {
-			console.log('You clicked on a picture with full source: ' + src);
+			// HERE: We got the source, now show the image.
 		}
 	};
 })(jQuery);

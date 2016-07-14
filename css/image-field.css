@@ -43,21 +43,22 @@
   width: auto;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
-/* line 52, sass/image-field.scss */
+/* line 53, sass/image-field.scss */
 .wm-story-side-images, .wm-illustrations {
   float: right;
   margin-left: 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 52, sass/image-field.scss */
+  /* line 53, sass/image-field.scss */
   .wm-story-side-images, .wm-illustrations {
     max-width: 25%;
     margin: 0.5em;
   }
 }
-/* line 61, sass/image-field.scss */
+/* line 62, sass/image-field.scss */
 .wm-story-side-images .wm-image-field, .wm-story-side-images .wm-illustration, .wm-illustrations .wm-image-field, .wm-illustrations .wm-illustration {
   display: block;
   margin: 0 0 1em 0;
@@ -65,29 +66,29 @@
   box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
 }
 @media only screen and (max-width: 768px) {
-  /* line 61, sass/image-field.scss */
+  /* line 62, sass/image-field.scss */
   .wm-story-side-images .wm-image-field, .wm-story-side-images .wm-illustration, .wm-illustrations .wm-image-field, .wm-illustrations .wm-illustration {
     border-width: 0.1em;
   }
 }
-/* line 72, sass/image-field.scss */
+/* line 73, sass/image-field.scss */
 .wm-story-side-images .wm-image-field img, .wm-story-side-images .wm-illustration img, .wm-illustrations .wm-image-field img, .wm-illustrations .wm-illustration img {
   width: 100%;
 }
-/* line 76, sass/image-field.scss */
+/* line 77, sass/image-field.scss */
 .wm-story-side-images .wm-image-field .wm-image-author, .wm-story-side-images .wm-illustration .wm-image-author, .wm-illustrations .wm-image-field .wm-image-author, .wm-illustrations .wm-illustration .wm-image-author {
   display: none;
 }
-/* line 80, sass/image-field.scss */
+/* line 81, sass/image-field.scss */
 .wm-story-side-images .wm-image-field .wm-image-label, .wm-story-side-images .wm-illustration .wm-image-label, .wm-illustrations .wm-image-field .wm-image-label, .wm-illustrations .wm-illustration .wm-image-label {
   display: none;
 }
 
-/* line 88, sass/image-field.scss */
+/* line 89, sass/image-field.scss */
 .wm-story-footer-image {
   text-align: center;
 }
-/* line 91, sass/image-field.scss */
+/* line 92, sass/image-field.scss */
 .wm-story-footer-image .wm-image-field {
   margin-top: 5em;
   display: inline-block;
@@ -96,30 +97,30 @@
   padding: 2em;
 }
 @media only screen and (min-width: 1200px) and (max-height: 800px) {
-  /* line 91, sass/image-field.scss */
+  /* line 92, sass/image-field.scss */
   .wm-story-footer-image .wm-image-field {
     max-height: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 91, sass/image-field.scss */
+  /* line 92, sass/image-field.scss */
   .wm-story-footer-image .wm-image-field {
     padding: 0;
     margin: 0.5em;
   }
 }
-/* line 109, sass/image-field.scss */
+/* line 110, sass/image-field.scss */
 .wm-story-footer-image .wm-image-field img {
   box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(70, 38, 0, 0);
   max-height: 850px;
 }
 @media only screen and (min-width: 1200px) and (max-height: 800px) {
-  /* line 109, sass/image-field.scss */
+  /* line 110, sass/image-field.scss */
   .wm-story-footer-image .wm-image-field img {
     max-height: 700px;
   }
 }
-/* line 119, sass/image-field.scss */
+/* line 120, sass/image-field.scss */
 .wm-story-footer-image .wm-image-label {
   display: block;
   margin-top: 2em;
@@ -129,33 +130,33 @@
   font-size: 1.3em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 119, sass/image-field.scss */
+  /* line 120, sass/image-field.scss */
   .wm-story-footer-image .wm-image-label {
     margin-top: 1em;
   }
 }
-/* line 131, sass/image-field.scss */
+/* line 132, sass/image-field.scss */
 .wm-story-footer-image .wm-image-label p {
   line-height: 1.5em;
   text-indent: 0;
 }
-/* line 137, sass/image-field.scss */
+/* line 138, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author {
   background-color: inherit;
   border: none;
   box-shadow: none;
   font-size: 0.8em;
 }
-/* line 143, sass/image-field.scss */
+/* line 144, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author a, .wm-story-footer-image .wm-image-author span {
   color: #331B00;
 }
-/* line 146, sass/image-field.scss */
+/* line 147, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author a:hover, .wm-story-footer-image .wm-image-author a:active, .wm-story-footer-image .wm-image-author span:hover, .wm-story-footer-image .wm-image-author span:active {
   color: #7A5326;
 }
 
-/* line 156, sass/image-field.scss */
+/* line 157, sass/image-field.scss */
 .wm-front-page-section .wm-image-label {
   position: absolute;
   bottom: 0;
@@ -171,43 +172,43 @@
   transition: background-color 0.5s, color 0.5s;
 }
 @media only screen and (max-width: 768px) {
-  /* line 156, sass/image-field.scss */
+  /* line 157, sass/image-field.scss */
   .wm-front-page-section .wm-image-label {
     padding: 0;
     font-size: 1.2em;
     line-height: 1em;
   }
-  /* line 176, sass/image-field.scss */
+  /* line 177, sass/image-field.scss */
   .wm-front-page-section .wm-image-label p {
     margin: 0.3em 0.5em;
   }
 }
 
 /***** Expanded version of the front page image *****/
-/* line 185, sass/image-field.scss */
+/* line 186, sass/image-field.scss */
 .wm-expanded .wm-image-label, .wm-hover .wm-image-label {
   background-color: rgba(255, 255, 255, 0.95);
   color: #462600;
   z-index: 0;
 }
-/* line 191, sass/image-field.scss */
+/* line 192, sass/image-field.scss */
 .wm-expanded .wm-image-author, .wm-hover .wm-image-author {
   background-color: transparent;
   box-shadow: none;
   z-index: 10;
 }
 @media only screen and (max-width: 768px) {
-  /* line 191, sass/image-field.scss */
+  /* line 192, sass/image-field.scss */
   .wm-expanded .wm-image-author, .wm-hover .wm-image-author {
     z-index: -10;
     visibility: hidden;
   }
 }
-/* line 201, sass/image-field.scss */
+/* line 202, sass/image-field.scss */
 .wm-expanded .wm-image-author a, .wm-expanded .wm-image-author span, .wm-hover .wm-image-author a, .wm-hover .wm-image-author span {
   color: #462600;
 }
-/* line 204, sass/image-field.scss */
+/* line 205, sass/image-field.scss */
 .wm-expanded .wm-image-author a:hover, .wm-expanded .wm-image-author a:active, .wm-expanded .wm-image-author span:hover, .wm-expanded .wm-image-author span:active, .wm-hover .wm-image-author a:hover, .wm-hover .wm-image-author a:active, .wm-hover .wm-image-author span:hover, .wm-hover .wm-image-author span:active {
   color: #935000;
 }

@@ -76,7 +76,8 @@ function wm_preprocess_menu(&$variables, $hook) {
  * Adds nice class name to selected fields.
  */
 function wm_preprocess_field(&$variables, $hook) {
-	$process_fields = array(
+	// Add a class to some fields:
+  $process_fields = array(
 		'story_author_name',
 		'story_author_about',
 		'story_body',
@@ -84,11 +85,23 @@ function wm_preprocess_field(&$variables, $hook) {
 		'illustrated_section',
 	);
 
+  $field_name = $variables['field_name'];
+
 	foreach ($process_fields as $name) {
-		if ($variables['field_name'] == "field_$name") {
+		if ($field_name == "field_$name") {
 			$variables['attributes']['class'][] = 'wm-' . str_replace('_', '-', $name);
 		}
 	}
+}
+
+/**
+ * Implements template_preprocess_image_style().
+ *
+ * Adds the full image URL as a custom attribute to the <img> tag.
+ */
+function wm_preprocess_image_style(&$variables) {
+  $uri = $variables['uri'];
+  $variables['image']['#attributes']['data-full-src'] = file_url_transform_relative(file_create_url($uri));
 }
 
 /**
