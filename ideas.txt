@@ -10,16 +10,3 @@ Big stories could be combined together in one page.
 Responsive menu (hamburger)
 
 Look at the paper from Rocio
-
-Now:
-* No justified text
-* Full screen welcome slide
-* Reduce shadow
-* Either paragraph spacing, OR indentation.
-* Smaller line height (1.5em)
-* Unify top menu in one block
-* Upper case for menu titles with bigger letter spacing?
-* More elaborate font for the title and less for the written text
-* Fix the font size in the footer.
-* Separate sections with background colors
-* Could add a small contact form on the front page.
