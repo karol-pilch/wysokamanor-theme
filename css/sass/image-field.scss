@@ -1,7 +1,7 @@
 @import 'palette';
 @import 'breakpoints';
 
-// The image field
+/***** General *****/
 .wm-image-field, .wm-illustration {
 	display: inline-block;
 	position: relative;
@@ -49,7 +49,7 @@
 	}
 }
 
-// Side images
+/***** Side images *****/
 .wm-story-side-images, .wm-illustrations {
 	float: right;
 	margin-left: 1em;
@@ -85,7 +85,7 @@
 }
 
 
-// Footer images
+/***** Footer images *****/
 .wm-story-footer-image {
 	text-align: center;
 
@@ -204,6 +204,126 @@
 
 			&:hover, &:active {
 				color: lighten($dark, 15%);
+			}
+		}
+	}
+}
+
+/***** Full screen view *****/
+$nav-buttons-width: 8rem;
+$nav-height: 6rem;
+
+.wm-overlay-container {
+	position: fixed;
+	opacity: 0;
+	z-index: -50;
+	top: 10%; bottom: -10%; left: 0; right: 0;
+
+	transition: top 0.7s, bottom 0.7s, opacity 0.4s;
+
+	&.wm-visible {
+		opacity: 1;
+		z-index: 50;
+		top: 0; bottom: 0;
+	}
+	
+
+	background-color: rgba(0, 0, 0, 0.92);
+
+	.wm-overlay-inner {
+		height: calc(100% - #{$nav-height});
+
+		.wm-image-field, .wm-illustration {
+			margin: 0;
+			padding: 0;
+			box-shadow: none;
+			position: static;	// We're going to position to the Overlay.
+			height: 100%;
+
+			max-width: calc(1920px + 2em);
+
+			background-color: transparent;
+
+			display: flex;
+			align-items: center;
+
+			img {
+				max-height: 100%;
+			}
+		}
+
+		.wm-image-label {
+			position: absolute;
+			bottom: 0;
+			left: $nav-buttons-width;
+			right: $nav-buttons-width;
+			height: $nav-height;
+
+			text-align: center;
+			font-style: italic;
+			font-size: 1.3em;
+
+			background-color: #FFF;
+
+			p {
+				margin: 0.5em;
+				line-height: 1.3em;
+			}
+		}
+	}
+
+	nav > div {
+		background-color: #FFF;
+		position: absolute;
+		bottom: 0;
+		width: $nav-buttons-width;
+		height: $nav-height;
+
+		font-size: 1.3em;
+		padding: 1em;
+
+		transition: background-color 0.3s;
+
+		&:hover:not(.wm-unavailable) {
+			cursor: pointer;
+			background-color: $light;
+		}
+	}
+
+	.wm-prev {
+		left: 0;
+		text-align: right;
+	}
+
+	.wm-next {
+		right: 0;
+	}
+
+	.wm-unavailable {
+		color: #EEE;
+	}
+
+	@include media('mobile') {
+		$nav-buttons-width: 4rem;
+
+		.wm-overlay-inner .wm-image-label {
+			left: $nav-buttons-width;
+			right: $nav-buttons-width;
+		}
+
+		nav > div {
+			width: $nav-buttons-width;
+			font-size: 1em;
+			padding: 2.5em 0.2em;
+
+			transition-duration: 0.2s;
+
+			&:hover:not(.wm-unavailable) {
+				background-color: #FFF;
+			}
+
+			&.wm-tapped:not(.wm-unavailable) {
+				background-color: $light;
 			}
 		}
 	}

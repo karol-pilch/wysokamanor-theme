@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/***** General *****/
 /* line 5, sass/image-field.scss */
 .wm-image-field, .wm-illustration {
   display: inline-block;
@@ -46,6 +47,7 @@
   margin: 0 auto;
 }
 
+/***** Side images *****/
 /* line 53, sass/image-field.scss */
 .wm-story-side-images, .wm-illustrations {
   float: right;
@@ -84,6 +86,7 @@
   display: none;
 }
 
+/***** Footer images *****/
 /* line 89, sass/image-field.scss */
 .wm-story-footer-image {
   text-align: center;
@@ -211,4 +214,113 @@
 /* line 205, sass/image-field.scss */
 .wm-expanded .wm-image-author a:hover, .wm-expanded .wm-image-author a:active, .wm-expanded .wm-image-author span:hover, .wm-expanded .wm-image-author span:active, .wm-hover .wm-image-author a:hover, .wm-hover .wm-image-author a:active, .wm-hover .wm-image-author span:hover, .wm-hover .wm-image-author span:active {
   color: #935000;
+}
+
+/***** Full screen view *****/
+/* line 216, sass/image-field.scss */
+.wm-overlay-container {
+  position: fixed;
+  opacity: 0;
+  z-index: -50;
+  top: 10%;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  transition: top 0.7s, bottom 0.7s, opacity 0.4s;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+/* line 224, sass/image-field.scss */
+.wm-overlay-container.wm-visible {
+  opacity: 1;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+}
+/* line 233, sass/image-field.scss */
+.wm-overlay-container .wm-overlay-inner {
+  height: calc(100% - 6rem);
+}
+/* line 236, sass/image-field.scss */
+.wm-overlay-container .wm-overlay-inner .wm-image-field, .wm-overlay-container .wm-overlay-inner .wm-illustration {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  position: static;
+  height: 100%;
+  max-width: calc(1920px + 2em);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+/* line 250, sass/image-field.scss */
+.wm-overlay-container .wm-overlay-inner .wm-image-field img, .wm-overlay-container .wm-overlay-inner .wm-illustration img {
+  max-height: 100%;
+}
+/* line 255, sass/image-field.scss */
+.wm-overlay-container .wm-overlay-inner .wm-image-label {
+  position: absolute;
+  bottom: 0;
+  left: 8rem;
+  right: 8rem;
+  height: 6rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+  background-color: #FFF;
+}
+/* line 268, sass/image-field.scss */
+.wm-overlay-container .wm-overlay-inner .wm-image-label p {
+  margin: 0.5em;
+  line-height: 1.3em;
+}
+/* line 275, sass/image-field.scss */
+.wm-overlay-container nav > div {
+  background-color: #FFF;
+  position: absolute;
+  bottom: 0;
+  width: 8rem;
+  height: 6rem;
+  font-size: 1.3em;
+  padding: 1em;
+  transition: background-color 0.3s;
+}
+/* line 287, sass/image-field.scss */
+.wm-overlay-container nav > div:hover:not(.wm-unavailable) {
+  cursor: pointer;
+  background-color: #B38B5E;
+}
+/* line 293, sass/image-field.scss */
+.wm-overlay-container .wm-prev {
+  left: 0;
+  text-align: right;
+}
+/* line 298, sass/image-field.scss */
+.wm-overlay-container .wm-next {
+  right: 0;
+}
+/* line 302, sass/image-field.scss */
+.wm-overlay-container .wm-unavailable {
+  color: #EEE;
+}
+@media only screen and (max-width: 768px) {
+  /* line 309, sass/image-field.scss */
+  .wm-overlay-container .wm-overlay-inner .wm-image-label {
+    left: 4rem;
+    right: 4rem;
+  }
+  /* line 314, sass/image-field.scss */
+  .wm-overlay-container nav > div {
+    width: 4rem;
+    font-size: 1em;
+    padding: 2.5em 0.2em;
+    transition-duration: 0.2s;
+  }
+  /* line 321, sass/image-field.scss */
+  .wm-overlay-container nav > div:hover:not(.wm-unavailable) {
+    background-color: #FFF;
+  }
+  /* line 325, sass/image-field.scss */
+  .wm-overlay-container nav > div.wm-tapped:not(.wm-unavailable) {
+    background-color: #B38B5E;
+  }
 }

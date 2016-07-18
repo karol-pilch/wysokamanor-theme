@@ -42,23 +42,7 @@
 				Drupal.behaviors.wmImagePreview.showFull(this, fullSrc);
 			});
 
-		},
-
-		expandPicture: function (container) {
-			$(container).toggleClass('wm-expanded');
-		},
-
-		toggleHover: function (container, enable) {
-			$(container).toggleClass('wm-hover', enable);
-		},
-
-		navTargets: {
-			prev: null,
-			next: null
-		},
-
-		showFull: function (container, src) {
-
+			// Handle overlay events
 			function handleNext(evt) {
 				var targets = Drupal.behaviors.wmImagePreview.navTargets;
 				if (targets.next) {
@@ -75,35 +59,45 @@
 				evt.stopPropagation();
 			}
 
-			// Returns the overlay element. Creates it if needed.
-			function getOverlayContainer() {
-				var overlay = $('.wm-overlay-container');
-				if (overlay.length > 0) {
-					return overlay.first();
-				}
+			var overlay = $('.wm-overlay-container').first();
 
-				// Make the DOM object
-				var newDom = $(''
-					+ '<div class="wm-overlay-container">'
-					+ '	<div class="wm-close-icon"></div>'
-					+ '	<div class="wm-overlay-inner">'
-					+ '		<div class="wm-image-field"></div>'
-					+ '	</div>'
-					+ '	<nav><div class="wm-prev">Previous</div><div class="wm-next">Next</div></nav>'
-					+ '</div>');
+			// Hide the overlay on click.
+			overlay.on('click', function(evt) {
+				$(this).toggleClass('wm-visible', false);
+			});
 
-				// Hide the overlay on click.
-				newDom.on('click', function(evt) {
-					$(this).toggleClass('wm-visible', false);
-				});
+			// Handle next and previous buttons
+			overlay.find('.wm-prev').on('click', handlePrev);
+			overlay.find('.wm-next').on('click', handleNext);
 
-				// Handle next and previous buttons
-				newDom.find('.wm-prev').on('click', handlePrev);
-				newDom.find('.wm-next').on('click', handleNext);
+			// Add class to buttons for transitions to work on mobile
+			overlay.find('nav > div').on('click', function (evt) {
+				console.log('Tap handler.');
+				$(this)
+					.addClass('wm-tapped')
+					.delay(200)
+					.queue(function() {
+						$(this)
+							.removeClass('wm-tapped')
+							.dequeue();
+					});
+			});
+		},
 
-				return newDom.prependTo($('body'));
-			}
+		expandPicture: function (container) {
+			$(container).toggleClass('wm-expanded');
+		},
 
+		toggleHover: function (container, enable) {
+			$(container).toggleClass('wm-hover', enable);
+		},
+
+		navTargets: {
+			prev: null,
+			next: null
+		},
+
+		showFull: function (container, src) {
 			// Make a copy of the image field:
 			var replacement = $(container).clone();
 
@@ -111,7 +105,7 @@
 			replacement.find('img').attr('src', src);
 			replacement.originalField = container;
 
-			var overlay = getOverlayContainer();
+			var overlay = $('.wm-overlay-container').first();
 
 			// Sort out the next and previous buttons:
 			var nextField = $(container).next('.wm-image-field');
