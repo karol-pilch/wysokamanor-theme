@@ -35,9 +35,11 @@
 				}
 			});
 
+			// Save all images to use for next and prev buttons:
+			Drupal.behaviors.wmImagePreview.allImages = $('.wm-story-side-images .wm-image-field, .wm-illustrations .wm-illustration');
 
-			// Show full-screen preview for side images and illustrations
-			$('.wm-story-side-images .wm-image-field, .wm-illustrations .wm-illustration').on('click', function (evt) {
+			// Show full-screen preview for side images and illustrations:
+			Drupal.behaviors.wmImagePreview.allImages.on('click', function (evt) {
 				var fullSrc = $(this).find('img').first().attr('data-full-src');
 				Drupal.behaviors.wmImagePreview.showFull(this, fullSrc);
 			});
@@ -63,7 +65,12 @@
 
 			// Hide the overlay on click.
 			overlay.on('click', function(evt) {
-				$(this).toggleClass('wm-visible', false);
+				var target = $(evt.target);
+
+				// Ignore clicks on the nav and on the image.
+				if (target.parents('.wm-image-label').length === 0 && target.prop('tagName') != 'IMG') {
+					Drupal.behaviors.wmImagePreview.hideFull();
+				}
 			});
 
 			// Handle next and previous buttons
@@ -72,7 +79,6 @@
 
 			// Add class to buttons for transitions to work on mobile
 			overlay.find('nav > div').on('click', function (evt) {
-				console.log('Tap handler.');
 				$(this)
 					.addClass('wm-tapped')
 					.delay(200)
@@ -97,6 +103,7 @@
 			next: null
 		},
 
+		// container: image field where click originated.
 		showFull: function (container, src) {
 			// Make a copy of the image field:
 			var replacement = $(container).clone();
@@ -105,18 +112,20 @@
 			replacement.find('img').attr('src', src);
 			replacement.originalField = container;
 
-			var overlay = $('.wm-overlay-container').first();
+			var overlay = $('.wm-overlay-container').first(),
+			    allImages = Drupal.behaviors.wmImagePreview.allImages,
+			    currentIndex = allImages.index(container),
+			    prevIndex = currentIndex > 0 ? currentIndex - 1 : null,
+			    nextIndex = currentIndex < allImages.length - 1 ? currentIndex + 1 : null;
 
 			// Sort out the next and previous buttons:
-			var nextField = $(container).next('.wm-image-field');
-			overlay.find('.wm-next')
-				.toggleClass('wm-unavailable', nextField.length === 0);
-			Drupal.behaviors.wmImagePreview.navTargets.next = nextField.first();
-
-			var prevField = $(container).prev('.wm-image-field');
 			overlay.find('.wm-prev')
-				.toggleClass('wm-unavailable', prevField.length === 0);
-			Drupal.behaviors.wmImagePreview.navTargets.prev = prevField.first();
+				.toggleClass('wm-unavailable', prevIndex === null);
+			Drupal.behaviors.wmImagePreview.navTargets.prev = prevIndex === null ? null : $(allImages.get(prevIndex));
+
+			overlay.find('.wm-next')
+				.toggleClass('wm-unavailable', nextIndex === null);
+			Drupal.behaviors.wmImagePreview.navTargets.next = nextIndex === null ? null : $(allImages.get(nextIndex));
 
 			// Put the copied image field to the overlay and show it:
 			overlay
@@ -125,8 +134,8 @@
 					.replaceWith(replacement);
 		},
 
-		hideFull: function(container) {
-			$(container).toggleClass('wm-visible', false)
+		hideFull: function() {
+			$('.wm-overlay-container').toggleClass('wm-visible', false);
 		}
 	};
 })(jQuery);
