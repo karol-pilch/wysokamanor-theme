@@ -68,7 +68,9 @@
 				var target = $(evt.target);
 
 				// Ignore clicks on the nav and on the image.
-				if (target.parents('.wm-image-label').length === 0 && target.prop('tagName') != 'IMG') {
+				if (target.parents('.wm-image-label').length === 0 && 
+						!target.hasClass('wm-image-label') &&
+					  target.prop('tagName') != 'IMG') {
 					Drupal.behaviors.wmImagePreview.hideFull();
 				}
 			});
@@ -109,7 +111,9 @@
 			var replacement = $(container).clone();
 
 			// Replace the image with the big varsion and tell it about where it came from:
-			replacement.find('img').attr('src', src);
+			replacement.find('img')
+				.attr('src', src)
+				.removeAttr('alt');
 			replacement.originalField = container;
 
 			var overlay = $('.wm-overlay-container').first(),
@@ -130,7 +134,7 @@
 			// Put the copied image field to the overlay and show it:
 			overlay
 				.toggleClass('wm-visible', true)
-					.find('.wm-image-field')
+					.find('.wm-image-field, .wm-illustration')
 					.replaceWith(replacement);
 		},
 

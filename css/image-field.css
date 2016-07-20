@@ -52,6 +52,8 @@
 .wm-story-side-images, .wm-illustrations {
   float: right;
   margin-left: 1em;
+  padding: 0 0.6em 0.6em;
+  background-color: white;
 }
 @media only screen and (max-width: 768px) {
   /* line 53, sass/image-field.scss */
@@ -60,15 +62,13 @@
     margin: 0.5em;
   }
 }
-/* line 62, sass/image-field.scss */
+/* line 65, sass/image-field.scss */
 .wm-story-side-images .wm-image-field, .wm-story-side-images .wm-illustration, .wm-illustrations .wm-image-field, .wm-illustrations .wm-illustration {
   display: block;
-  margin: 0 0 1em 0;
-  border: 0.5em solid white;
-  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
+  margin-top: 0.6em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 62, sass/image-field.scss */
+  /* line 65, sass/image-field.scss */
   .wm-story-side-images .wm-image-field, .wm-story-side-images .wm-illustration, .wm-illustrations .wm-image-field, .wm-illustrations .wm-illustration {
     border-width: 0.1em;
   }
@@ -95,9 +95,8 @@
 .wm-story-footer-image .wm-image-field {
   margin-top: 5em;
   display: inline-block;
-  background-color: white;
-  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
   padding: 2em;
+  background-color: white;
 }
 @media only screen and (min-width: 1200px) and (max-height: 800px) {
   /* line 92, sass/image-field.scss */
@@ -112,54 +111,54 @@
     margin: 0.5em;
   }
 }
-/* line 110, sass/image-field.scss */
+/* line 108, sass/image-field.scss */
 .wm-story-footer-image .wm-image-field img {
   box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(70, 38, 0, 0);
   max-height: 850px;
 }
 @media only screen and (min-width: 1200px) and (max-height: 800px) {
-  /* line 110, sass/image-field.scss */
+  /* line 108, sass/image-field.scss */
   .wm-story-footer-image .wm-image-field img {
     max-height: 700px;
   }
 }
-/* line 120, sass/image-field.scss */
+/* line 118, sass/image-field.scss */
 .wm-story-footer-image .wm-image-label {
   display: block;
   margin-top: 2em;
   padding: 0 2em;
   text-align: center;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 120, sass/image-field.scss */
+  /* line 118, sass/image-field.scss */
   .wm-story-footer-image .wm-image-label {
     margin-top: 1em;
   }
 }
-/* line 132, sass/image-field.scss */
+/* line 130, sass/image-field.scss */
 .wm-story-footer-image .wm-image-label p {
   line-height: 1.5em;
   text-indent: 0;
 }
-/* line 138, sass/image-field.scss */
+/* line 136, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author {
   background-color: inherit;
   border: none;
   box-shadow: none;
   font-size: 0.8em;
 }
-/* line 144, sass/image-field.scss */
+/* line 142, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author a, .wm-story-footer-image .wm-image-author span {
   color: #331B00;
 }
-/* line 147, sass/image-field.scss */
+/* line 145, sass/image-field.scss */
 .wm-story-footer-image .wm-image-author a:hover, .wm-story-footer-image .wm-image-author a:active, .wm-story-footer-image .wm-image-author span:hover, .wm-story-footer-image .wm-image-author span:active {
   color: #7A5326;
 }
 
-/* line 157, sass/image-field.scss */
+/* line 155, sass/image-field.scss */
 .wm-front-page-section .wm-image-label {
   position: absolute;
   bottom: 0;
@@ -167,7 +166,7 @@
   right: 0;
   text-align: center;
   padding: 0.4em 0;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-style: italic;
   white-space: normal;
   background-color: transparent;
@@ -175,49 +174,49 @@
   transition: background-color 0.5s, color 0.5s;
 }
 @media only screen and (max-width: 768px) {
-  /* line 157, sass/image-field.scss */
+  /* line 155, sass/image-field.scss */
   .wm-front-page-section .wm-image-label {
     padding: 0;
     font-size: 1.2em;
     line-height: 1em;
   }
-  /* line 177, sass/image-field.scss */
+  /* line 175, sass/image-field.scss */
   .wm-front-page-section .wm-image-label p {
     margin: 0.3em 0.5em;
   }
 }
 
 /***** Expanded version of the front page image *****/
-/* line 186, sass/image-field.scss */
+/* line 184, sass/image-field.scss */
 .wm-expanded .wm-image-label, .wm-hover .wm-image-label {
   background-color: rgba(255, 255, 255, 0.95);
   color: #462600;
   z-index: 0;
 }
-/* line 192, sass/image-field.scss */
+/* line 190, sass/image-field.scss */
 .wm-expanded .wm-image-author, .wm-hover .wm-image-author {
   background-color: transparent;
   box-shadow: none;
   z-index: 10;
 }
 @media only screen and (max-width: 768px) {
-  /* line 192, sass/image-field.scss */
+  /* line 190, sass/image-field.scss */
   .wm-expanded .wm-image-author, .wm-hover .wm-image-author {
     z-index: -10;
     visibility: hidden;
   }
 }
-/* line 202, sass/image-field.scss */
+/* line 200, sass/image-field.scss */
 .wm-expanded .wm-image-author a, .wm-expanded .wm-image-author span, .wm-hover .wm-image-author a, .wm-hover .wm-image-author span {
   color: #462600;
 }
-/* line 205, sass/image-field.scss */
+/* line 203, sass/image-field.scss */
 .wm-expanded .wm-image-author a:hover, .wm-expanded .wm-image-author a:active, .wm-expanded .wm-image-author span:hover, .wm-expanded .wm-image-author span:active, .wm-hover .wm-image-author a:hover, .wm-hover .wm-image-author a:active, .wm-hover .wm-image-author span:hover, .wm-hover .wm-image-author span:active {
   color: #935000;
 }
 
 /***** Full screen view *****/
-/* line 216, sass/image-field.scss */
+/* line 214, sass/image-field.scss */
 .wm-overlay-container {
   position: fixed;
   opacity: 0;
@@ -229,18 +228,18 @@
   transition: top 0.7s, bottom 0.7s, opacity 0.4s;
   background-color: rgba(0, 0, 0, 0.92);
 }
-/* line 224, sass/image-field.scss */
+/* line 222, sass/image-field.scss */
 .wm-overlay-container.wm-visible {
   opacity: 1;
   z-index: 50;
   top: 0;
   bottom: 0;
 }
-/* line 233, sass/image-field.scss */
+/* line 231, sass/image-field.scss */
 .wm-overlay-container .wm-overlay-inner {
   height: calc(100% - 6rem);
 }
-/* line 236, sass/image-field.scss */
+/* line 234, sass/image-field.scss */
 .wm-overlay-container .wm-overlay-inner .wm-image-field, .wm-overlay-container .wm-overlay-inner .wm-illustration {
   margin: 0;
   padding: 0;
@@ -252,74 +251,102 @@
   display: flex;
   align-items: center;
 }
-/* line 250, sass/image-field.scss */
+/* line 248, sass/image-field.scss */
 .wm-overlay-container .wm-overlay-inner .wm-image-field img, .wm-overlay-container .wm-overlay-inner .wm-illustration img {
   max-height: 100%;
+  min-height: 50px;
+  min-width: 50px;
+  background-image: url("../images/spinner.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
-/* line 255, sass/image-field.scss */
+/* line 259, sass/image-field.scss */
 .wm-overlay-container .wm-overlay-inner .wm-image-label {
   position: absolute;
   bottom: 0;
-  left: 8rem;
-  right: 8rem;
+  left: 6rem;
+  right: 6rem;
   height: 6rem;
   text-align: center;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.1em;
   background-color: #FFF;
+  display: flex;
+  align-items: center;
 }
-/* line 268, sass/image-field.scss */
+/* line 275, sass/image-field.scss */
 .wm-overlay-container .wm-overlay-inner .wm-image-label p {
   margin: 0.5em;
   line-height: 1.3em;
+  width: 100%;
 }
-/* line 275, sass/image-field.scss */
+/* line 283, sass/image-field.scss */
 .wm-overlay-container nav > div {
   background-color: #FFF;
   position: absolute;
   bottom: 0;
-  width: 8rem;
+  width: 6rem;
   height: 6rem;
-  font-size: 1.3em;
-  padding: 1em;
+  font-family: Tahoma, sans-serif;
+  font-size: 4rem;
+  padding: 0.1em 0.3em;
   transition: background-color 0.3s;
 }
-/* line 287, sass/image-field.scss */
+/* line 296, sass/image-field.scss */
 .wm-overlay-container nav > div:hover:not(.wm-unavailable) {
   cursor: pointer;
   background-color: #B38B5E;
 }
-/* line 293, sass/image-field.scss */
+/* line 302, sass/image-field.scss */
 .wm-overlay-container .wm-prev {
   left: 0;
   text-align: right;
 }
-/* line 298, sass/image-field.scss */
+/* line 307, sass/image-field.scss */
 .wm-overlay-container .wm-next {
   right: 0;
 }
-/* line 302, sass/image-field.scss */
+/* line 311, sass/image-field.scss */
 .wm-overlay-container .wm-unavailable {
   color: #EEE;
 }
+/* line 315, sass/image-field.scss */
+.wm-overlay-container .wm-close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.1em 0.2em;
+  border-bottom-left-radius: 0.1em;
+  color: rgba(179, 139, 94, 0.3);
+  background-color: transparent;
+  transition: color 0.3s, background-color 0.1s;
+  cursor: pointer;
+}
+/* line 327, sass/image-field.scss */
+.wm-overlay-container .wm-close-icon:hover {
+  color: #FFF7EE;
+  background-color: rgba(6, 6, 6, 0.5);
+}
 @media only screen and (max-width: 768px) {
-  /* line 309, sass/image-field.scss */
+  /* line 338, sass/image-field.scss */
   .wm-overlay-container .wm-overlay-inner .wm-image-label {
     left: 4rem;
     right: 4rem;
+    font-size: 0.8rem;
   }
-  /* line 314, sass/image-field.scss */
+  /* line 345, sass/image-field.scss */
   .wm-overlay-container nav > div {
     width: 4rem;
-    font-size: 1em;
-    padding: 2.5em 0.2em;
+    font-size: 3em;
+    padding: 0.5em 0.2em;
     transition-duration: 0.2s;
   }
-  /* line 321, sass/image-field.scss */
+  /* line 352, sass/image-field.scss */
   .wm-overlay-container nav > div:hover:not(.wm-unavailable) {
     background-color: #FFF;
   }
-  /* line 325, sass/image-field.scss */
+  /* line 356, sass/image-field.scss */
   .wm-overlay-container nav > div.wm-tapped:not(.wm-unavailable) {
     background-color: #B38B5E;
   }

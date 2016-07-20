@@ -9,7 +9,7 @@ body {
 	background-color: $lighter;
 	color: $darker;
 
-	font-size: 1.3em;
+	font-size: 1.1em;
 
 	@include media('mobile') {
 		font-size: 0.9em;
@@ -48,15 +48,10 @@ article {
 	margin: 0 auto;
 
 	font-size: 1.1em;
-	line-height: 1.9em;
+	line-height: 1.3em;
 
 	-webkit-hyphens: auto;
 	hyphens: auto;
-
-	text-align: justify;
-	p {
-		text-indent: 2em;
-	}
 
 	@include media('mobile') {
 		line-height: normal;
@@ -88,6 +83,7 @@ a {
 }
 
 footer.wm-footer {
+	font-size: 1rem;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: rgba(200, 200, 200, 0.8);
 	text-align: center;

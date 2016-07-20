@@ -3,10 +3,9 @@
   float: left;
   width: 14em;
   margin: 0 1em 1em 0;
-  padding: 0.5em 1em 1em;
+  padding: 0 1em 1em;
   color: #462600;
   background-color: white;
-  box-shadow: 0.2em 0.2em 0.8em rgba(70, 38, 0, 0.2);
 }
 @media only screen and (max-width: 768px) {
   /* line 5, sass/story.scss */
@@ -14,64 +13,60 @@
     width: 100%;
   }
 }
-/* line 20, sass/story.scss */
+/* line 18, sass/story.scss */
 .wm-story-author-field .wm-field-label {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 20, sass/story.scss */
+  /* line 18, sass/story.scss */
   .wm-story-author-field .wm-field-label {
     display: inline-block;
   }
 }
 
-/* line 29, sass/story.scss */
+/* line 27, sass/story.scss */
 .wm-story-author-face {
   float: left;
   margin: 0 0.5em 0.5em 0;
   height: 5em;
 }
-/* line 34, sass/story.scss */
+/* line 32, sass/story.scss */
 .wm-story-author-face img {
-  box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(70, 38, 0, 0.2);
   max-height: 100%;
   width: auto;
 }
 
-/* line 41, sass/story.scss */
+/* line 39, sass/story.scss */
 .wm-story-author-name {
   text-align: center;
   font-size: 1.1em;
-  margin: 0 0 0.5em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 41, sass/story.scss */
+  /* line 39, sass/story.scss */
   .wm-story-author-name {
     display: inline-block;
     font-size: 1em;
   }
 }
 
-/* line 52, sass/story.scss */
+/* line 49, sass/story.scss */
 .wm-story-author-about {
   font-size: 0.9em;
   line-height: 1.1em;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-/* line 58, sass/story.scss */
+/* line 55, sass/story.scss */
 .wm-story-author-about p {
-  text-indent: 1em;
-  text-align: justify;
   margin-top: 0;
 }
-/* line 63, sass/story.scss */
+/* line 58, sass/story.scss */
 .wm-story-author-about p:last-child {
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 69, sass/story.scss */
+  /* line 64, sass/story.scss */
   .wm-story-body {
     padding-left: 0.5em;
     padding-right: 0.5em;

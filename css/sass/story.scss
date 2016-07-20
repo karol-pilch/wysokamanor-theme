@@ -6,12 +6,10 @@
 	float: left;
 	width: 14em;
 	margin: 0 1em 1em 0;
-	padding: 0.5em 1em 1em;
+	padding: 0 1em 1em;
 	color: $dark;
 
 	background-color: lighten($lighter, 10%);
-
-	box-shadow: 0.2em 0.2em 0.8em $transparent;
 
 	@include media('mobile') {
 		width: 100%;
@@ -32,7 +30,7 @@
 	height: 5em;
 
 	img {
-		box-shadow: 0.2em 0.2em 1.5em -0.1em $transparent;
+		// box-shadow: 0.2em 0.2em 1.5em -0.1em $transparent;
 		max-height: 100%;
 		width: auto;
 	}
@@ -41,7 +39,6 @@
 .wm-story-author-name {
 	text-align: center;
 	font-size: 1.1em;
-	margin: 0 0 0.5em;
 
 	@include media('mobile') {
 		display: inline-block;
@@ -56,8 +53,6 @@
 	hyphens: auto;
 
 	p {
-		text-indent: 1em;
-		text-align: justify;
 		margin-top: 0;
 
 		&:last-child {

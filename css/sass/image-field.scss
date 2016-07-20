@@ -53,6 +53,9 @@
 .wm-story-side-images, .wm-illustrations {
 	float: right;
 	margin-left: 1em;
+	padding: 0 0.6em 0.6em;
+
+	background-color: lighten($lighter, 10%);
 
 	@include media('mobile') {
 		max-width: 25%;
@@ -61,10 +64,7 @@
 
 	.wm-image-field, .wm-illustration {
 		display: block;
-		margin: 0 0 1em 0;
-
-		border: 0.5em solid lighten($lighter, 10%);
-		box-shadow: 0.2em 0.2em 0.8em $transparent;
+		margin-top: 0.6em;
 
 		@include media('mobile') {
 			border-width: 0.1em;
@@ -92,11 +92,9 @@
 	.wm-image-field {
 		margin-top: 5em;
 		display: inline-block;
+		padding: 2em;
 
 		background-color: lighten($lighter, 10%);
-		box-shadow: 0.2em 0.2em 0.8em $transparent;
-
-		padding: 2em;
 
 		@include media('wide') {
 			max-height: 100%;
@@ -123,7 +121,7 @@
 		padding: 0 2em;
 		text-align: center;
 		font-style: italic;
-		font-size: 1.3em;
+		font-size: 1.2em;
 
 		@include media('mobile') {
 			margin-top: 1em;
@@ -160,7 +158,7 @@
 		text-align: center;
 		padding: 0.4em 0;
 
-		font-size: 1.6em;
+		font-size: 1.2em;
 		font-style: italic;
 		white-space: normal;
 
@@ -210,7 +208,7 @@
 }
 
 /***** Full screen view *****/
-$nav-buttons-width: 8rem;
+$nav-buttons-width: 6rem;
 $nav-height: 6rem;
 
 .wm-overlay-container {
@@ -249,6 +247,12 @@ $nav-height: 6rem;
 
 			img {
 				max-height: 100%;
+				min-height: 50px;
+				min-width: 50px;
+				background-image: url('../images/spinner.gif');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: contain;
 			}
 		}
 
@@ -261,13 +265,17 @@ $nav-height: 6rem;
 
 			text-align: center;
 			font-style: italic;
-			font-size: 1.3em;
+			font-size: 1.1em;
 
 			background-color: #FFF;
+
+			display: flex;
+			align-items: center;
 
 			p {
 				margin: 0.5em;
 				line-height: 1.3em;
+				width: 100%;
 			}
 		}
 	}
@@ -279,8 +287,9 @@ $nav-height: 6rem;
 		width: $nav-buttons-width;
 		height: $nav-height;
 
-		font-size: 1.3em;
-		padding: 1em;
+		font-family: Tahoma, sans-serif;
+		font-size: 4rem;
+		padding: 0.1em 0.3em;
 
 		transition: background-color 0.3s;
 
@@ -303,18 +312,40 @@ $nav-height: 6rem;
 		color: #EEE;
 	}
 
+	.wm-close-icon {
+		position: absolute;
+		top: 0; right: 0;
+		padding: 0.1em 0.2em;
+
+		border-bottom-left-radius: 0.1em;
+
+		color: transparentize($light, 0.7);
+		background-color: transparent;
+
+		transition: color 0.3s, background-color 0.1s;
+
+		&:hover {
+			color: $lighter;
+			background-color: rgba(6, 6, 6, 0.5);
+		}
+
+		cursor: pointer;
+	}
+
 	@include media('mobile') {
 		$nav-buttons-width: 4rem;
 
 		.wm-overlay-inner .wm-image-label {
 			left: $nav-buttons-width;
 			right: $nav-buttons-width;
+
+			font-size: 0.8rem;
 		}
 
 		nav > div {
 			width: $nav-buttons-width;
-			font-size: 1em;
-			padding: 2.5em 0.2em;
+			font-size: 3em;
+			padding: 0.5em 0.2em;
 
 			transition-duration: 0.2s;
 
