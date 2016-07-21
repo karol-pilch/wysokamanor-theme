@@ -92,6 +92,17 @@ function wm_preprocess_field(&$variables, $hook) {
 			$variables['attributes']['class'][] = 'wm-' . str_replace('_', '-', $name);
 		}
 	}
+
+	if ($field_name == 'field_front_page_section') {
+		$section_number = 1;
+		foreach ($variables['items'] as &$item) {
+			if ($item['content']['#field_collection_item']->get('field_fronta_page_section_header')->count() > 0) {
+				$section_number++;
+			}
+			$item['content']['#section_number'] = $section_number;
+			// I know this is weird but it's the only way to get it to work.
+		}
+	}
 }
 
 /**

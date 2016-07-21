@@ -8,24 +8,21 @@ body.page-node-type-front-page header {
 }
 /* line 11, sass/front.scss */
 body.page-node-type-front-page article {
-  max-width: initial;
+  max-width: 100%;
   margin: 0 auto;
-  font-size: initial;
-  line-height: initial;
   -webkit-hyphens: none;
   hyphens: none;
-  text-align: initial;
 }
-/* line 23, sass/front.scss */
+/* line 18, sass/front.scss */
 body.page-node-type-front-page article p {
   text-indent: 0;
 }
 
-/* line 30, sass/front.scss */
+/* line 25, sass/front.scss */
 .wm-site-name {
   text-align: center;
 }
-/* line 33, sass/front.scss */
+/* line 28, sass/front.scss */
 .wm-site-name h1 {
   display: inline-block;
   padding: 0.3em 2em 0.1em;
@@ -35,7 +32,7 @@ body.page-node-type-front-page article p {
   font-size: 4em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 33, sass/front.scss */
+  /* line 28, sass/front.scss */
   .wm-site-name h1 {
     padding: 1em 0 0;
     width: 100%;
@@ -46,75 +43,77 @@ body.page-node-type-front-page article p {
   }
 }
 
-/* line 55, sass/front.scss */
+/* line 50, sass/front.scss */
+.wm-section-number-2, .wm-section-number-4, .wm-section-number-6 {
+  background-color: #C3A481;
+}
+
+/* line 54, sass/front.scss */
 .wm-front-page-section {
-  margin: 2em 0 0;
-  padding: 2rem 0;
+  margin: 0;
+  padding: 4rem 0;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
-  /* line 55, sass/front.scss */
+  /* line 54, sass/front.scss */
   .wm-front-page-section {
     margin: 0;
     padding: 1rem 0.5em;
   }
 }
-/* line 65, sass/front.scss */
-.wm-front-page-section.wm-titled {
-  box-shadow: inset 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
-}
-/* line 69, sass/front.scss */
+/* line 64, sass/front.scss */
 .wm-front-page-section h2.wm-section-title {
   margin: 1rem auto 2rem;
   text-align: center;
   font-size: 3em;
+  line-height: normal;
   white-space: nowrap;
   overflow: hidden;
   font-weight: normal;
   font-style: italic;
 }
-/* line 81, sass/front.scss */
+/* line 77, sass/front.scss */
 .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
   content: '~';
   padding: 0 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 69, sass/front.scss */
+  /* line 64, sass/front.scss */
   .wm-front-page-section h2.wm-section-title {
     white-space: normal;
     font-size: 2.2em;
   }
-  /* line 90, sass/front.scss */
+  /* line 86, sass/front.scss */
   .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
     display: none;
   }
 }
-/* line 96, sass/front.scss */
+/* line 92, sass/front.scss */
 .wm-front-page-section .wm-image-field {
   box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(100, 100, 100, 0.3);
 }
-/* line 100, sass/front.scss */
+/* line 96, sass/front.scss */
 .wm-front-page-section .wm-section-content {
-  font-size: 2em;
+  font-size: 1.7em;
+  line-height: normal;
   max-width: 1200px;
   padding: 0 2em;
   margin: 1em auto 0;
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 100, sass/front.scss */
+  /* line 96, sass/front.scss */
   .wm-front-page-section .wm-section-content {
     font-size: 1.3em;
     padding: 0;
   }
 }
-/* line 112, sass/front.scss */
+/* line 109, sass/front.scss */
 .wm-front-page-section .wm-section-content p {
-  text-align: justify;
-  text-indent: 1em;
-  margin: 0;
+  margin-top: 0;
+  text-align: left;
 }
-/* line 118, sass/front.scss */
+/* line 114, sass/front.scss */
 .wm-front-page-section .wm-section-content a {
   display: inline-block;
   margin-top: 0.3em;
@@ -124,7 +123,7 @@ body.page-node-type-front-page article p {
   color: #000;
   transition: background-color 0.5s, border-color 0.2s;
 }
-/* line 128, sass/front.scss */
+/* line 124, sass/front.scss */
 .wm-front-page-section .wm-section-content a:hover {
   background-color: rgba(70, 38, 0, 0.2);
   border-bottom-color: #462600;

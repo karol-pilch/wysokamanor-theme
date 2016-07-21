@@ -9,16 +9,11 @@ body.page-node-type-front-page {
 	}
 
 	article {
-		max-width: initial;
+		max-width: 100%;
 		margin: 0 auto;
-
-		font-size: initial;
-		line-height: initial;
 
 		-webkit-hyphens: none;
 		hyphens: none;
-
-		text-align: initial;
 
 		p {
 			text-indent: 0;
@@ -52,9 +47,13 @@ body.page-node-type-front-page {
 }
 
 // Sections of the front page.
+.wm-section-number-2, .wm-section-number-4, .wm-section-number-6 {
+	background-color: $light;
+}
+
 .wm-front-page-section{
-	margin: 2em 0 0;
-	padding: 2rem 0;
+	margin: 0;
+	padding: 4rem 0;
 	text-align: center;
 
 	@include media('mobile') {
@@ -62,15 +61,12 @@ body.page-node-type-front-page {
 		padding: 1rem 0.5em;
 	}
 
-	&.wm-titled {
-		box-shadow: inset 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
-	}
-
 	h2.wm-section-title {
 		margin: 1rem auto 2rem;
 
 		text-align: center;
 		font-size: 3em;
+		line-height: normal;
 
 		white-space: nowrap;
 		overflow: hidden;
@@ -98,11 +94,12 @@ body.page-node-type-front-page {
 	}
 
 	.wm-section-content {
-		font-size: 2em;
+		font-size: 1.7em;
+		line-height: normal;
 		max-width: 1200px;
 		padding: 0 2em;
 		margin: 1em auto 0;
-		text-align: right;
+		text-align: right;	// Need this for the link
 
 		@include media('mobile') {
 			font-size: 1.3em;
@@ -110,9 +107,8 @@ body.page-node-type-front-page {
 		}
 
 		p {
-			text-align: justify;
-			text-indent: 1em;
-			margin: 0;
+			margin-top: 0;
+			text-align: left;
 		}
 
 		a {

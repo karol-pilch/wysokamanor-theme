@@ -212,20 +212,6 @@ $nav-buttons-width: 6rem;
 $nav-height: 6rem;
 
 .wm-overlay-container {
-	position: fixed;
-	opacity: 0;
-	z-index: -50;
-	top: 10%; bottom: -10%; left: 0; right: 0;
-
-	transition: top 0.7s, bottom 0.7s, opacity 0.4s;
-
-	&.wm-visible {
-		opacity: 1;
-		z-index: 50;
-		top: 0; bottom: 0;
-	}
-	
-
 	background-color: rgba(0, 0, 0, 0.92);
 
 	.wm-overlay-inner {

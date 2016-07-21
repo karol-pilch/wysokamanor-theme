@@ -1,9 +1,9 @@
-/* line 1, sass/fonts.scss */
+/* line 3, sass/fonts.scss */
 body {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* line 5, sass/fonts.scss */
+/* line 7, sass/fonts.scss */
 h1, h2, h3 {
-  font-family: 'Crimson Text', 'Book Antiqua', serif;
+  font-family: "Crimson Text", "Book Antiqua", serif;
 }

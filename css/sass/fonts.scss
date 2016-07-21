@@ -1,7 +1,9 @@
+@import 'palette';
+
 body {
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-family: $sans;
 }
 
 h1, h2, h3 {
-	font-family: 'Crimson Text', 'Book Antiqua', serif;
+	font-family: $serif;
 }

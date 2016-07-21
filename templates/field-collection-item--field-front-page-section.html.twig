@@ -27,7 +27,7 @@
 	{% set class = 'wm-titled' %}
 {% endif %}
 
-<div{{ attributes.addClass(['wm-front-page-section', class]) }}>
+<div{{ attributes.addClass(['wm-front-page-section', class, 'wm-section-number-' ~ item['#section_number']]) }}>
 	{% if content.field_fronta_page_section_header[0] %}
 		<h2 class="wm-section-title"> {{ content.field_fronta_page_section_header[0] }} </h2>
 	{% endif %}

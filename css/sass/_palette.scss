@@ -1,7 +1,12 @@
+// Palette of colours:
 $lighter: #FFF7EE;
-$light: #B38B5E;
+$light: #C3A481;
 $normal: #7A5326;
 $dark: #462600;
 $darker: #331B00;
 
 $transparent: transparentize($dark, 0.8);
+
+// Palette of fonts:
+$sans: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$serif: 'Crimson Text', 'Book Antiqua', serif;
