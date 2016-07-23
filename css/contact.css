@@ -33,7 +33,7 @@
 }
 
 /* line 33, sass/contact.scss */
-.block:not(#block-contactprivacystatement) h2 {
+main .block:not(#block-contactprivacystatement) h2 {
   margin: 1rem auto;
   width: 100%;
   text-align: center;
@@ -44,18 +44,18 @@
   font-style: italic;
 }
 /* line 46, sass/contact.scss */
-.block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
+main .block:not(#block-contactprivacystatement) h2:before, main .block:not(#block-contactprivacystatement) h2:after {
   content: '~';
   padding: 0 1em;
 }
 @media only screen and (max-width: 768px) {
   /* line 33, sass/contact.scss */
-  .block:not(#block-contactprivacystatement) h2 {
+  main .block:not(#block-contactprivacystatement) h2 {
     white-space: normal;
     font-size: 1.7em;
   }
   /* line 55, sass/contact.scss */
-  .block:not(#block-contactprivacystatement) h2:before, .block:not(#block-contactprivacystatement) h2:after {
+  main .block:not(#block-contactprivacystatement) h2:before, main .block:not(#block-contactprivacystatement) h2:after {
     display: none;
   }
 }
@@ -163,22 +163,32 @@ label:after, label.form-required:after {
   border-color: #51681F;
 }
 /* line 160, sass/contact.scss */
+.form-item input.error {
+  border: none;
+  border-bottom: 3px solid rgba(187, 62, 85, 0.5);
+}
+/* line 165, sass/contact.scss */
 .form-item textarea {
   margin-top: 0.8em;
   border: solid rgba(81, 104, 31, 0.5);
   border-width: 0 3px;
   border-radius: 0.1em;
 }
+/* line 172, sass/contact.scss */
+.form-item textarea.error {
+  border-color: rgba(187, 62, 85, 0.5);
+  border-width: 0 3px;
+}
 
-/* line 169, sass/contact.scss */
+/* line 179, sass/contact.scss */
 .form-actions {
   text-align: center;
 }
-/* line 172, sass/contact.scss */
+/* line 182, sass/contact.scss */
 .form-actions input#edit-preview {
   display: none;
 }
-/* line 176, sass/contact.scss */
+/* line 186, sass/contact.scss */
 .form-actions input#edit-submit {
   display: inline-block;
   border: none;
@@ -190,7 +200,7 @@ label:after, label.form-required:after {
   outline: none;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
-/* line 190, sass/contact.scss */
+/* line 200, sass/contact.scss */
 .form-actions input#edit-submit:hover, .form-actions input#edit-submit:focus {
   background-color: #94ae5c;
   box-shadow: 0.5em 0.5em 1em rgba(81, 104, 31, 0.2);

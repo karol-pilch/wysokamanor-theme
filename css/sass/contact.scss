@@ -30,7 +30,7 @@
 	}
 }
 
-.block:not(#block-contactprivacystatement) h2 {
+main .block:not(#block-contactprivacystatement) h2 {
 	margin: 1rem auto;
 	width: 100%;
 
@@ -157,11 +157,21 @@ label, label.form-required {
 		}
 	}
 
+	input.error {
+		border: none;
+		border-bottom: 3px solid transparentize($error, 0.5);
+	}
+
 	textarea {
 		margin-top: 0.8em;
 		border: solid transparentize($dark, 0.5);
 		border-width: 0 3px;
 		border-radius: 0.1em;
+	}
+
+	textarea.error {
+		border-color: transparentize($error, 0.5);
+		border-width: 0 3px;
 	}
 }
 

@@ -51,6 +51,46 @@ body {
 	}
 }
 
+.wm-region.wm-top {
+	text-align: center;
+
+	.region {
+		display: inline-block;
+
+		.messages {
+			text-align: left;
+			border: none;
+			padding: 1em;
+			margin: 1em 0 0;
+
+			box-shadow: none;
+			background-image: none;
+
+			.messages__list {
+				margin-left: 1em;
+
+				.messages__item {
+					list-style: disc;
+				}
+			}
+
+			&.messages--status {
+				background-color: $normal;
+				color: $lighter;
+			}
+
+			&.messages--warning {
+				background-color: #F4E98A;
+				color: darken(#F4E98A, 60%);
+			}
+
+			&.messages--error {
+				background-color: $error;
+				color: white;
+			}
+		}
+	}
+}
 article {
 	max-width: 1200px;
 	margin: 0 auto;
