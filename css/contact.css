@@ -96,7 +96,7 @@
 }
 /* line 93, sass/contact.scss */
 #block-wm-additionalcontactinformation .wm-map iframe {
-  box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);
+  box-shadow: 0.5em 0.5em 1em rgba(81, 104, 31, 0.2);
   width: 100%;
   max-width: 800px;
 }
@@ -154,18 +154,18 @@ label:after, label.form-required:after {
   background-color: transparent;
   outline: none;
   padding: 0.2em;
-  border-bottom: 3px solid rgba(70, 38, 0, 0.5);
+  border-bottom: 3px solid rgba(81, 104, 31, 0.5);
   transition: background-color 0.3s, border-color 0.3s;
 }
 /* line 154, sass/contact.scss */
 .form-item input:focus, .form-item textarea:focus {
   background-color: white;
-  border-color: #462600;
+  border-color: #51681F;
 }
 /* line 160, sass/contact.scss */
 .form-item textarea {
   margin-top: 0.8em;
-  border: solid rgba(70, 38, 0, 0.5);
+  border: solid rgba(81, 104, 31, 0.5);
   border-width: 0 3px;
   border-radius: 0.1em;
 }
@@ -185,13 +185,13 @@ label:after, label.form-required:after {
   border-radius: 0.2em;
   padding: 0.5em 1em;
   font-size: 1.5em;
-  color: #FFF7EE;
-  background-color: #7A5326;
+  color: #fbfcf8;
+  background-color: #6A7E3F;
   outline: none;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 /* line 190, sass/contact.scss */
 .form-actions input#edit-submit:hover, .form-actions input#edit-submit:focus {
-  background-color: #b47b38;
-  box-shadow: 0.5em 0.5em 1em rgba(70, 38, 0, 0.2);
+  background-color: #94ae5c;
+  box-shadow: 0.5em 0.5em 1em rgba(81, 104, 31, 0.2);
 }

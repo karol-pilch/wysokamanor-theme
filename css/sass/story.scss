@@ -4,7 +4,8 @@
 // Author
 .wm-story-author-field {
 	float: left;
-	width: 14em;
+	min-width: 14em;
+	max-width: 30%;
 	margin: 0 1em 1em 0;
 	padding: 0 1em 1em;
 	color: $dark;
@@ -13,6 +14,8 @@
 
 	@include media('mobile') {
 		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
 	}
 
 	.wm-field-label {

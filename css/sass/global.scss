@@ -26,19 +26,12 @@ body {
 
 	font-size: 1.1em;
 
+	&.wm-has-overlay {
+		overflow: hidden;
+	}
+
 	@include media('mobile') {
 		font-size: 0.9em;
-	}
-}
-
-header {
-	padding: 2em 0;
-	background-color: $light;
-	box-shadow: 0 1.5em 2em -1em $transparent;
-
-	@include media('mobile') {
-		padding: 0;
-		box-shadow: none;
 	}
 }
 

@@ -2,6 +2,8 @@
 @import 'breakpoints';
 
 .wm-navigation-links {
+	font-family: $serif;
+	font-size: 1.5em;
 
 	a {
 		position: relative;
@@ -19,10 +21,9 @@
 	}
 
 	.wm-link-body {
-		margin-left: 2.5rem;
+		margin-left: 3rem;
 		padding: 0 0.4em;
 
-		font-size: 1.5rem;
 		line-height: 2em;
 
 		@include media('mobile') {
@@ -34,13 +35,10 @@
 
 	.wm-link-icon {
 		position: absolute;
-		width: 2.5rem;
-		height: 2.5rem;
-		top: 0.25rem;
-		left: 0.25rem;
-
-		border-radius: 50%;
-		background-color: darken($transparent, 10%);
+		height: 3rem;
+		width: 3rem;
+		top: 0;
+		left: 0;
 		background-size: cover;
 	}
 

@@ -68,7 +68,7 @@
 				var target = $(evt.target);
 
 				// Ignore clicks on the nav and on the image.
-				if (target.parents('.wm-image-label').length === 0 && 
+				if (target.parents('.wm-image-label').length === 0 &&
 						!target.hasClass('wm-image-label') &&
 					  target.prop('tagName') != 'IMG') {
 					Drupal.behaviors.wmImagePreview.hideFull();
@@ -136,10 +136,14 @@
 				.toggleClass('wm-visible', true)
 					.find('.wm-image-field, .wm-illustration')
 					.replaceWith(replacement);
+
+			// Add a class to body
+			$('body').toggleClass('wm-has-overlay', true);
 		},
 
 		hideFull: function() {
 			$('.wm-overlay-container').toggleClass('wm-visible', false);
+			$('body').toggleClass('wm-has-overlay', false);
 		}
 	};
 })(jQuery);

@@ -1,49 +1,51 @@
-/* line 6, sass/navigation-links.scss */
+/* line 4, sass/navigation-links.scss */
+.wm-navigation-links {
+  font-family: "Crimson Text", "Book Antiqua", serif;
+  font-size: 1.5em;
+}
+/* line 8, sass/navigation-links.scss */
 .wm-navigation-links a {
   position: relative;
   display: block;
   height: 3rem;
   transition: background-color 0.3s;
 }
-/* line 12, sass/navigation-links.scss */
+/* line 14, sass/navigation-links.scss */
 .wm-navigation-links a:hover {
-  background-color: rgba(70, 38, 0, 0.2);
+  background-color: rgba(81, 104, 31, 0.2);
 }
-/* line 17, sass/navigation-links.scss */
+/* line 19, sass/navigation-links.scss */
 .wm-navigation-links li {
   padding: 0;
 }
-/* line 21, sass/navigation-links.scss */
+/* line 23, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-body {
-  margin-left: 2.5rem;
+  margin-left: 3rem;
   padding: 0 0.4em;
-  font-size: 1.5rem;
   line-height: 2em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 21, sass/navigation-links.scss */
+  /* line 23, sass/navigation-links.scss */
   .wm-navigation-links .wm-link-body {
     line-height: 1em;
     vertical-align: -1rem;
     display: inline-block;
   }
 }
-/* line 35, sass/navigation-links.scss */
+/* line 36, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-icon {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  top: 0.25rem;
-  left: 0.25rem;
-  border-radius: 50%;
-  background-color: rgba(19, 10, 0, 0.2);
+  height: 3rem;
+  width: 3rem;
+  top: 0;
+  left: 0;
   background-size: cover;
 }
-/* line 48, sass/navigation-links.scss */
+/* line 46, sass/navigation-links.scss */
 .wm-navigation-links .wm-link-contact .wm-link-icon {
   background-image: url("../images/contact.jpg");
 }
-/* line 52, sass/navigation-links.scss */
+/* line 50, sass/navigation-links.scss */
 .wm-navigation-links a, .wm-navigation-links a:hover {
   text-decoration: none;
   color: black;

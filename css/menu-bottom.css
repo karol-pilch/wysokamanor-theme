@@ -6,22 +6,23 @@
 /* line 8, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links {
   display: inline-block;
+  margin: 0;
 }
-/* line 11, sass/menu-bottom.scss */
+/* line 12, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links .active {
   display: none;
 }
-/* line 15, sass/menu-bottom.scss */
+/* line 16, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links li {
   margin: 1em 0;
 }
-/* line 19, sass/menu-bottom.scss */
+/* line 20, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links a {
   transition: border-color 0.2s;
   border: 0 solid transparent;
   border-width: 0 5px;
 }
-/* line 24, sass/menu-bottom.scss */
+/* line 25, sass/menu-bottom.scss */
 .menu--front-page-links .wm-navigation-links a:hover {
-  border-color: #462600;
+  border-color: #51681F;
 }

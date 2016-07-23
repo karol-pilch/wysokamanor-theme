@@ -24,9 +24,13 @@
 
 /* line 23, sass/global.scss */
 body {
-  background-color: #FFF7EE;
-  color: #331B00;
+  background-color: #fbfcf8;
+  color: #283017;
   font-size: 1.1em;
+}
+/* line 29, sass/global.scss */
+body.wm-has-overlay {
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   /* line 23, sass/global.scss */
@@ -35,40 +39,26 @@ body {
   }
 }
 
-/* line 34, sass/global.scss */
-header {
-  padding: 2em 0;
-  background-color: #C3A481;
-  box-shadow: 0 1.5em 2em -1em rgba(70, 38, 0, 0.2);
-}
-@media only screen and (max-width: 768px) {
-  /* line 34, sass/global.scss */
-  header {
-    padding: 0;
-    box-shadow: none;
-  }
-}
-
-/* line 45, sass/global.scss */
+/* line 38, sass/global.scss */
 .wm-page-title {
   text-align: center;
 }
-/* line 48, sass/global.scss */
+/* line 41, sass/global.scss */
 .wm-page-title h1 {
   display: inline-block;
   font-weight: normal;
   padding: 1em;
-  border-bottom: 1px solid #462600;
+  border-bottom: 1px solid #51681F;
 }
 @media only screen and (max-width: 768px) {
-  /* line 48, sass/global.scss */
+  /* line 41, sass/global.scss */
   .wm-page-title h1 {
     margin: 1rem 0;
     padding: 0.5rem 0;
   }
 }
 
-/* line 61, sass/global.scss */
+/* line 54, sass/global.scss */
 article {
   max-width: 1200px;
   margin: 0 auto;
@@ -78,29 +68,29 @@ article {
   hyphens: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 61, sass/global.scss */
+  /* line 54, sass/global.scss */
   article {
     line-height: normal;
   }
 }
 
-/* line 76, sass/global.scss */
+/* line 69, sass/global.scss */
 a {
-  color: #7A5326;
+  color: #6A7E3F;
   text-decoration: none;
   transition: color 0.3s, text-decoration 0.3s;
 }
-/* line 82, sass/global.scss */
+/* line 75, sass/global.scss */
 a:hover, a:active {
-  color: #C3A481;
+  color: #E2F3BB;
   text-decoration: underline;
 }
 
-/* line 88, sass/global.scss */
+/* line 81, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 91, sass/global.scss */
+/* line 84, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -109,7 +99,7 @@ a:hover, a:active {
   content: "* * *";
 }
 
-/* line 100, sass/global.scss */
+/* line 93, sass/global.scss */
 footer.wm-footer {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -117,54 +107,54 @@ footer.wm-footer {
   text-align: center;
   padding: 1em;
 }
-/* line 108, sass/global.scss */
+/* line 101, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 113, sass/global.scss */
+/* line 106, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 119, sass/global.scss */
+/* line 112, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 119, sass/global.scss */
+  /* line 112, sass/global.scss */
   footer.wm-footer .block {
     display: block;
     text-align: center;
     margin: 1em auto;
   }
 }
-/* line 130, sass/global.scss */
+/* line 123, sass/global.scss */
 footer.wm-footer :last-child {
   margin-bottom: 0;
 }
-/* line 134, sass/global.scss */
+/* line 127, sass/global.scss */
 footer.wm-footer :first-child {
   margin-top: 0;
 }
-/* line 138, sass/global.scss */
+/* line 131, sass/global.scss */
 footer.wm-footer .menu {
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 138, sass/global.scss */
+  /* line 131, sass/global.scss */
   footer.wm-footer .menu {
     text-align: center;
   }
 }
-/* line 146, sass/global.scss */
+/* line 139, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 150, sass/global.scss */
+/* line 143, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

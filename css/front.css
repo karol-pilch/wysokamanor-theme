@@ -27,7 +27,7 @@ body.page-node-type-front-page article p {
   display: inline-block;
   padding: 0.3em 2em 0.1em;
   margin: 1.2em 0;
-  border: solid #462600;
+  border: solid #51681F;
   border-width: 1px 0;
   font-size: 4em;
 }
@@ -39,29 +39,24 @@ body.page-node-type-front-page article p {
     font-size: 3em;
     border: none;
     margin: 0;
-    background-color: #FFF7EE;
+    background-color: #fbfcf8;
   }
 }
 
-/* line 50, sass/front.scss */
-.wm-section-number-2, .wm-section-number-4, .wm-section-number-6 {
-  background-color: #C3A481;
-}
-
-/* line 54, sass/front.scss */
+/* line 49, sass/front.scss */
 .wm-front-page-section {
   margin: 0;
   padding: 4rem 0;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
-  /* line 54, sass/front.scss */
+  /* line 49, sass/front.scss */
   .wm-front-page-section {
     margin: 0;
     padding: 1rem 0.5em;
   }
 }
-/* line 64, sass/front.scss */
+/* line 59, sass/front.scss */
 .wm-front-page-section h2.wm-section-title {
   margin: 1rem auto 2rem;
   text-align: center;
@@ -72,27 +67,23 @@ body.page-node-type-front-page article p {
   font-weight: normal;
   font-style: italic;
 }
-/* line 77, sass/front.scss */
+/* line 72, sass/front.scss */
 .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
   content: '~';
   padding: 0 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 64, sass/front.scss */
+  /* line 59, sass/front.scss */
   .wm-front-page-section h2.wm-section-title {
     white-space: normal;
     font-size: 2.2em;
   }
-  /* line 86, sass/front.scss */
+  /* line 81, sass/front.scss */
   .wm-front-page-section h2.wm-section-title:before, .wm-front-page-section h2.wm-section-title:after {
     display: none;
   }
 }
-/* line 92, sass/front.scss */
-.wm-front-page-section .wm-image-field {
-  box-shadow: 0.2em 0.2em 1.5em -0.1em rgba(100, 100, 100, 0.3);
-}
-/* line 96, sass/front.scss */
+/* line 87, sass/front.scss */
 .wm-front-page-section .wm-section-content {
   font-size: 1.7em;
   line-height: normal;
@@ -102,29 +93,46 @@ body.page-node-type-front-page article p {
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 96, sass/front.scss */
+  /* line 87, sass/front.scss */
   .wm-front-page-section .wm-section-content {
     font-size: 1.3em;
     padding: 0;
   }
 }
-/* line 109, sass/front.scss */
+/* line 100, sass/front.scss */
 .wm-front-page-section .wm-section-content p {
   margin-top: 0;
   text-align: left;
 }
-/* line 114, sass/front.scss */
+/* line 105, sass/front.scss */
 .wm-front-page-section .wm-section-content a {
   display: inline-block;
   margin-top: 0.3em;
   padding: 0.1em 0.5em;
   border-bottom: 3px solid transparent;
+  font-family: "Crimson Text", "Book Antiqua", serif;
+  font-size: 1.15em;
   text-decoration: none;
   color: #000;
   transition: background-color 0.5s, border-color 0.2s;
 }
-/* line 124, sass/front.scss */
+/* line 118, sass/front.scss */
 .wm-front-page-section .wm-section-content a:hover {
-  background-color: rgba(70, 38, 0, 0.2);
-  border-bottom-color: #462600;
+  background-color: rgba(81, 104, 31, 0.2);
+  border-bottom-color: #51681F;
+}
+
+/* line 127, sass/front.scss */
+.wm-section-number-2, .wm-section-number-4, .wm-section-number-6 {
+  background-color: #283017;
+  color: #fbfcf8;
+}
+/* line 131, sass/front.scss */
+.wm-section-number-2 .wm-section-content a, .wm-section-number-4 .wm-section-content a, .wm-section-number-6 .wm-section-content a {
+  color: #fbfcf8;
+}
+/* line 134, sass/front.scss */
+.wm-section-number-2 .wm-section-content a:hover, .wm-section-number-4 .wm-section-content a:hover, .wm-section-number-6 .wm-section-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: #fbfcf8;
 }

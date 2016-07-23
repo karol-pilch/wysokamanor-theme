@@ -65,6 +65,7 @@
 	.wm-image-field, .wm-illustration {
 		display: block;
 		margin-top: 0.6em;
+		cursor: pointer;
 
 		@include media('mobile') {
 			border-width: 0.1em;
@@ -238,7 +239,7 @@ $nav-height: 6rem;
 				background-image: url('../images/spinner.gif');
 				background-repeat: no-repeat;
 				background-position: 50% 50%;
-				background-size: contain;
+				background-size: 50px;
 			}
 		}
 
@@ -281,7 +282,7 @@ $nav-height: 6rem;
 
 		&:hover:not(.wm-unavailable) {
 			cursor: pointer;
-			background-color: $light;
+			background-color: $normal;
 		}
 	}
 

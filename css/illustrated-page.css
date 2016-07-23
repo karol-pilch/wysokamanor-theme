@@ -32,7 +32,6 @@ h2.wm-section-title:before, h2.wm-section-title:after {
   margin-top: 2em;
   overflow: auto;
   padding: 0 1.5em;
-  box-shadow: 0 1.5em 1.5em -1.5em rgba(100, 100, 100, 0.5);
   -webkit-hyphens: none;
   hyphens: none;
 }
@@ -45,7 +44,7 @@ h2.wm-section-title:before, h2.wm-section-title:after {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 47, sass/illustrated-page.scss */
+  /* line 46, sass/illustrated-page.scss */
   .wm-section-content {
     padding-left: 0.5em;
     padding-right: 0.5em;
