@@ -61,13 +61,16 @@ body.wm-has-overlay {
 /* line 54, sass/global.scss */
 .wm-region.wm-top {
   text-align: center;
+  font-size: 0;
 }
-/* line 57, sass/global.scss */
+/* line 58, sass/global.scss */
 .wm-region.wm-top .region {
   display: inline-block;
+  font-size: 1rem;
 }
-/* line 60, sass/global.scss */
-.wm-region.wm-top .region .messages {
+
+/* line 64, sass/global.scss */
+.messages {
   text-align: left;
   border: none;
   padding: 1em;
@@ -75,31 +78,31 @@ body.wm-has-overlay {
   box-shadow: none;
   background-image: none;
 }
-/* line 69, sass/global.scss */
-.wm-region.wm-top .region .messages .messages__list {
+/* line 73, sass/global.scss */
+.messages .messages__list {
   margin-left: 1em;
 }
-/* line 72, sass/global.scss */
-.wm-region.wm-top .region .messages .messages__list .messages__item {
+/* line 76, sass/global.scss */
+.messages .messages__list .messages__item {
   list-style: disc;
 }
-/* line 77, sass/global.scss */
-.wm-region.wm-top .region .messages.messages--status {
+/* line 81, sass/global.scss */
+.messages.messages--status {
   background-color: #6A7E3F;
   color: #fbfcf8;
 }
-/* line 82, sass/global.scss */
-.wm-region.wm-top .region .messages.messages--warning {
+/* line 86, sass/global.scss */
+.messages.messages--warning {
   background-color: #F4E98A;
   color: #453f07;
 }
-/* line 87, sass/global.scss */
-.wm-region.wm-top .region .messages.messages--error {
+/* line 91, sass/global.scss */
+.messages.messages--error {
   background-color: #BB3E55;
   color: white;
 }
 
-/* line 94, sass/global.scss */
+/* line 97, sass/global.scss */
 article {
   max-width: 1200px;
   margin: 0 auto;
@@ -109,29 +112,29 @@ article {
   hyphens: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 94, sass/global.scss */
+  /* line 97, sass/global.scss */
   article {
     line-height: normal;
   }
 }
 
-/* line 109, sass/global.scss */
+/* line 112, sass/global.scss */
 a {
   color: #6A7E3F;
   text-decoration: none;
   transition: color 0.3s, text-decoration 0.3s;
 }
-/* line 115, sass/global.scss */
+/* line 118, sass/global.scss */
 a:hover, a:active {
   color: #E2F3BB;
   text-decoration: underline;
 }
 
-/* line 121, sass/global.scss */
+/* line 124, sass/global.scss */
 .wm-region.wm-bottom {
   margin-top: 3em;
 }
-/* line 124, sass/global.scss */
+/* line 127, sass/global.scss */
 .wm-region.wm-bottom:before {
   display: block;
   text-align: center;
@@ -140,7 +143,7 @@ a:hover, a:active {
   content: "* * *";
 }
 
-/* line 133, sass/global.scss */
+/* line 136, sass/global.scss */
 footer.wm-footer {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
@@ -148,54 +151,54 @@ footer.wm-footer {
   text-align: center;
   padding: 1em;
 }
-/* line 141, sass/global.scss */
+/* line 144, sass/global.scss */
 footer.wm-footer a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s;
 }
-/* line 146, sass/global.scss */
+/* line 149, sass/global.scss */
 footer.wm-footer a:hover {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 152, sass/global.scss */
+/* line 155, sass/global.scss */
 footer.wm-footer .block {
   display: inline-block;
   margin: 1em 3em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 152, sass/global.scss */
+  /* line 155, sass/global.scss */
   footer.wm-footer .block {
     display: block;
     text-align: center;
     margin: 1em auto;
   }
 }
-/* line 163, sass/global.scss */
+/* line 166, sass/global.scss */
 footer.wm-footer :last-child {
   margin-bottom: 0;
 }
-/* line 167, sass/global.scss */
+/* line 170, sass/global.scss */
 footer.wm-footer :first-child {
   margin-top: 0;
 }
-/* line 171, sass/global.scss */
+/* line 174, sass/global.scss */
 footer.wm-footer .menu {
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 171, sass/global.scss */
+  /* line 174, sass/global.scss */
   footer.wm-footer .menu {
     text-align: center;
   }
 }
-/* line 179, sass/global.scss */
+/* line 182, sass/global.scss */
 footer.wm-footer li {
   display: inline-block;
   padding: 0 0.5em;
 }
-/* line 183, sass/global.scss */
+/* line 186, sass/global.scss */
 footer.wm-footer li:not(:last-child) {
   border-right: 1px solid rgba(200, 200, 200, 0.8);
 }

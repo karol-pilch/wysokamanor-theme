@@ -97,6 +97,10 @@ body.page-node-type-front-page {
 			padding: 0;
 		}
 
+		@include media('wide') {
+			font-size: 1.4em;
+		}
+
 		p {
 			margin-top: 0;
 			text-align: left;
@@ -123,6 +127,12 @@ body.page-node-type-front-page {
 	}
 }
 
+.wm-section-number-1 {
+	@include media('wide') {
+		padding-top: 0;
+	}
+}
+
 // Sections of the front page.
 .wm-section-number-2, .wm-section-number-4, .wm-section-number-6 {
 	background-color: $darker;
@@ -136,4 +146,8 @@ body.page-node-type-front-page {
 			border-bottom-color: $lighter;
 		}
 	}
+}
+
+.messages {
+	margin-bottom: 1em;
 }

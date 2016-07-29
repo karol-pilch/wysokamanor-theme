@@ -7,13 +7,9 @@
 	position: relative;
 	max-width: 1200px;
 
-	@include media('wide') {
-		max-height: 700px;
-	}
-
 	.wm-image-author {
 		position: absolute;
-		right: 0.5px;
+		right: 0;
 		bottom: 0;
 		line-height: 1.5em;
 
@@ -153,6 +149,12 @@
 // Labels hidden in a different way for the front page images
 .wm-front-page-section {
 
+	.wm-image-field {
+		@include media('wide') {
+			height: 700px;
+		}
+	}
+
 	.wm-image-label {
 		position: absolute;
 		bottom: 0; left: 0; right: 0;
@@ -225,7 +227,7 @@ $nav-height: 6rem;
 			position: static;	// We're going to position to the Overlay.
 			height: 100%;
 
-			max-width: calc(1920px + 2em);
+			max-width: 100%;
 
 			background-color: transparent;
 
