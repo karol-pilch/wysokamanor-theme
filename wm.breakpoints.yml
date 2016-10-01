@@ -1,18 +1,28 @@
-stark.mobile:
+wm.mobile:
   label: mobile
-  mediaQuery: '(min-width: 0px)'
+  mediaQuery: 'screen and (min-width: 0px) and (max-width: 479px)'
   weight: 0
   multipliers:
    - 1x
-stark.narrow:
+   - 2x
+wm.narrow:
   label: narrow
-  mediaQuery: 'all and (min-width: 480px) and (max-width: 959px)'
-  weight: 1
+  mediaQuery: 'screen and (min-width: 480px) and (max-width: 959px)'
+  weight: 10
   multipliers:
     - 1x
-stark.wide:
+    - 2x
+wm.wide:
   label: wide
-  mediaQuery: 'all and (min-width: 960px)'
-  weight: 2
+  mediaQuery: 'screen and (min-width: 960px) and (max-width: 1919px)'
+  weight: 20
   multipliers:
     - 1x
+    - 2x
+wm.huge:
+  label: huge
+  mediaQuery: 'screen and (min-width: 1920px)'
+  weight: 30
+  multipliers:
+      - 1x
+      - 2x
