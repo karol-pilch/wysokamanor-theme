@@ -1,7 +1,0 @@
-Downloading copy of test site:
-* Copy the settings and settings.local somewhere else.
-* Put test-2016-08-02.dump from the server somewhere
-* In VDD, run drush archive-restore dump/test-2016-08-02.dump --overwrite --destination=drupal8 --db-url=mysql://root:root@127.0.0.1/wysokamanor-db
-	* Run the command from one folder above drupal8.
-* Restore the settings files.
-* Run drush cr for the site.
