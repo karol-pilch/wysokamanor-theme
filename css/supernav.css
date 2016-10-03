@@ -1,0 +1,70 @@
+/* line 4, sass/supernav.scss */
+.block.menu--main {
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  background-color: #6A7E3F;
+}
+/* line 10, sass/supernav.scss */
+.block.menu--main .menu {
+  font-family: "Crimson Text", "Book Antiqua", serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  /* line 10, sass/supernav.scss */
+  .block.menu--main .menu {
+    flex-direction: column;
+  }
+}
+/* line 25, sass/supernav.scss */
+.block.menu--main .menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 4rem;
+  padding: 0 0.4em;
+  line-height: 2em;
+  text-align: center;
+  color: #fbfcf8;
+  transition: background-color 0.3s;
+}
+/* line 42, sass/supernav.scss */
+.block.menu--main .menu a:hover {
+  background-color: #51681F;
+}
+@media only screen and (max-width: 768px) {
+  /* line 25, sass/supernav.scss */
+  .block.menu--main .menu a {
+    line-height: 1em;
+    vertical-align: -1rem;
+    display: inline-block;
+  }
+}
+/* line 53, sass/supernav.scss */
+.block.menu--main .menu li {
+  min-width: 0;
+  flex-grow: 1;
+  padding: 0;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  /* line 53, sass/supernav.scss */
+  .block.menu--main .menu li {
+    padding: 0.25em 0.5em;
+    width: 100%;
+  }
+}
+/* line 65, sass/supernav.scss */
+.block.menu--main .menu li:last-child {
+  border-right-width: 1px;
+}
+/* line 69, sass/supernav.scss */
+.block.menu--main .menu li.menu-item--active-trail a {
+  text-decoration: underline;
+}

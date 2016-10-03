@@ -1,18 +1,16 @@
 @import 'palette';
 @import 'breakpoints';
 
-.supernav {
-	text-align: center;
-}
-
-.menu--main {
+.block.menu--main {
 	text-transform: uppercase;
 	letter-spacing: 0.11em;
 
 	background-color: $normal;
-	color: $lighter;
 
-	.wm-navigation-links {
+	.menu {
+		font-family: $serif;
+		text-align: center;
+
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -24,34 +22,40 @@
 			flex-direction: column;
 		}
 
-		.wm-link-icon {
-			display: none;
-		}
-
-		.wm-link-body {
-			margin: 0 0.2em;
-			line-height: normal;
-		}
-
 		a {
-			min-height: 4rem;
-
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 
-			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
+			min-height: 4rem;
+			padding: 0 0.4em;
+			line-height: 2em;
+
+			text-align: center;
 			color: $lighter;
 
+			transition: background-color 0.3s;
+
 			&:hover {
-				background-color: $dark; // rgba(255, 255, 255, 0.2);
+				background-color: $dark;
+			}
+
+			@include media('mobile') {
+				line-height: 1em;
+				vertical-align: -1rem;
+				display: inline-block;
 			}
 		}
 
 		li {
 			min-width: 0;
 			flex-grow: 1;
+			padding: 0;
+
+			line-height: normal;
 
 			@include media('mobile') {
 				padding: 0.25em 0.5em;
@@ -62,15 +66,9 @@
 				border-right-width: 1px;
 			}
 
-			a.active {
+			&.menu-item--active-trail a {
 				text-decoration: underline;
-			}
-
-			.wm-link-body {
-				overflow: hidden;
-				text-overflow: ellipsis;
 			}
 		}
 	}
-
 }

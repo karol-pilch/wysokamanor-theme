@@ -13,3 +13,4 @@ regions:
   content: Page content
   bottom: Content below main content
   footer: Footer
+  hidden: Invisible, but renderable region

@@ -81,7 +81,29 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+{{ attach_library('wm/front-page') }}
+
+<section class="wm-welcome">
+	{{ content.field_welcome_image }}
+	<div class="wm-overlay">
+		<h1>{{ site_name }}</h1>
+		{{ content.field_welcome_text }}
+	</div>
+</section>
+
+<section class="wm-explore">
+	{{ content.field_explore_image }}
+	{{ content.field_explore_title }} {# Template me! #}
+	{{ content.field_explore_link }} {# Template me! #}
+</section>
+
+<section class="wm-contact">
+	{{ content.field_contact_image }}
+	{{ content.field_contact_title_line }}
+	{{ content.field_contact_block }}
+</section>
+
+{# <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if not page %}
@@ -105,4 +127,4 @@
     {{ content }}
   </div>
 
-</article>
+</article> #}

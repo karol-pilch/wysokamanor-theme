@@ -25,6 +25,7 @@ function wm_debug($var, $label = NULL) {
  * Adds the image URL to menu link items so that we can use them in the template.
  */
 function wm_preprocess_menu(&$variables, $hook) {
+	$variables['#attached']['library'][] = 'wm/supernav';
 	if ($hook == 'menu__main' || $hook == 'menu__front_page_links') {
     if (count($variables['items'])) {
       foreach ($variables['items'] as $mlid => &$link_variables) {
@@ -121,7 +122,8 @@ function wm_preprocess_image_style(&$variables) {
  * Used to attach correct libraries to content types.
  */
 function wm_preprocess_page(&$variables) {
-	$variables['site_name'] = \Drupal::config('system.site')->get('name');
+
+	// TODO: See if we can get rid of this:
 	if (isset($variables['node'])) {
 		$node_type = $variables['node']->getType();
 
@@ -139,6 +141,10 @@ function wm_preprocess_page(&$variables) {
 				break;
 		}
 	}
+}
+
+function wm_preprocess_node(&$variables) {
+	$variables['site_name'] = \Drupal::config('system.site')->get('name');
 }
 
 function wm_preprocess_form(&$variables) {

@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Currently unused, but I'm leaving it here in case I need it in the future.
+ */
+
 (function ($) {
 	Drupal.behaviors.wmImagePreview = {
 		attach: function (context, settings) {

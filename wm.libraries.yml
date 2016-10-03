@@ -18,19 +18,12 @@ menu-main:
     theme:
       css/menu-main.css: {}
 
-# ... and for the bottom menu
-menu-bottom:
-  version: 1.x
-  css:
-    theme:
-      css/menu-bottom.css: {}
-
 # General pretty menu styling
-navigation-links:
+supernav:
   version: 1.x
   css:
     theme:
-      css/navigation-links.css: {}
+      css/supernav.css: {}
 
 # Front page library
 front-page:
@@ -38,47 +31,3 @@ front-page:
   css:
     theme:
       css/front.css: {}
-
-# Rich images
-image-field:
-  version: 1.x
-  css:
-    theme:
-      css/image-field.css: {}
-  js:
-    js/image-preview.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-
-# Story pages
-story-page:
-  version: 1.x
-  css:
-    theme:
-      css/story.css: {}
-
-# Illustrated pages
-illustrated-page:
-  version: 1.x
-  css:
-    theme:
-      css/illustrated-page.css: {}
-
-# Contact page
-contact:
-  version: 1.x
-  css:
-    theme:
-      css/contact.css: {}
-
-# Example:
-# cuddly-slider:
-#   version: 1.x
-#   css:
-#     theme:
-#       css/cuddly-slider.css: {}
-#   js:
-#     js/cuddly-slider.js: {}
-#   dependencies:
-#     - core/jquery
